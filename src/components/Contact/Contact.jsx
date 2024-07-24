@@ -31,7 +31,7 @@ const Contact = ({ lang, xIsClick }) => {
                 <p>Serra</p>
                 <p>Professor Estevao Pinto</p>
                 <span>{msg}</span>
-                <button>Whatsapp</button>
+                <button><a href="https://w.app/5s2w1P" target='_blank'>Whatsapp</a></button>
             </div>
             <IoCloseSharp className='contact-icon' onClick={xWasClick} />
         </>
