@@ -29,15 +29,15 @@ const Grid = ({ lang }) => {
 
   return (
     <div data-aos="fade-up" data-aos-duration="1000" className='grid'>
-      <div data-aos="fade-left" data-aos-duration="2000">
+      <div data-aos="fade-up" data-aos-duration="2000">
         <MdFolderSpecial />
         {projects}
       </div>
-      <div data-aos="fade-left" data-aos-duration="2500">
+      <div data-aos="fade-down" data-aos-duration="2500">
         <SiAboutdotme />
         {me}
       </div>
-      <div data-aos="fade-left" data-aos-duration="3000">
+      <div data-aos="fade-up" data-aos-duration="3000">
         <MdConnectWithoutContact />
         {contact}
       </div>

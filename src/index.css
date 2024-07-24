@@ -34,6 +34,6 @@ body{
 
   .portifolio {
     flex-direction: column;
-    gap: 5rem;
+    gap: 3.5rem;
   }
 }
