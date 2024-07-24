@@ -8,6 +8,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useState, useEffect } from 'react';
 
+import { Link } from 'react-router-dom';
+
 const Grid = ({ lang }) => {
 
   const [projects, setProjects] = useState('')
@@ -29,18 +31,18 @@ const Grid = ({ lang }) => {
 
   return (
     <div data-aos="fade-up" data-aos-duration="1000" className='grid'>
-      <div data-aos="fade-up" data-aos-duration="2000">
+      <Link to='/projects'><div data-aos="fade-up" data-aos-duration="2000">
         <MdFolderSpecial />
         {projects}
-      </div>
-      <div data-aos="fade-down" data-aos-duration="2500">
+      </div></Link>
+      <Link to='/about'><div data-aos="fade-down" data-aos-duration="2500">
         <SiAboutdotme />
         {me}
-      </div>
-      <div data-aos="fade-up" data-aos-duration="3000">
+      </div></Link>
+      <Link to='/contact'><div data-aos="fade-up" data-aos-duration="3000">
         <MdConnectWithoutContact />
         {contact}
-      </div>
+      </div></Link>
     </div>
   )
 }
