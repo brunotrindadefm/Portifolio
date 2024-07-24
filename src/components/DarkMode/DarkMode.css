@@ -60,13 +60,13 @@ body.dark-mode {
 }
 
 .hello.dark-mode h1 {
-  color: #FFD700;
+  color: #000;
 }
 .hello.dark-mode h5 span {
   color: #DEB887;
 }
 .hello.dark-mode p {
-  color: #FFD700;
+  color: #000;
 }
 .hello.dark-mode .btn {
   background-color: #DEB887;
@@ -79,4 +79,10 @@ body.dark-mode {
 
 .footer.dark-mode .social {
   background: #FFD700;
+}
+.footer.dark-mode .social .github:hover {
+  color: #ff6868;
+}
+.footer.dark-mode .social .linkedin:hover {
+  color: rgb(96, 135, 243);
 }/*# sourceMappingURL=DarkMode.css.map */

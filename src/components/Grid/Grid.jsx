@@ -28,7 +28,7 @@ const Grid = ({ lang }) => {
   }, [lang])
 
   return (
-    <div data-aos="zoom-in" className='grid'>
+    <div data-aos="fade-up" data-aos-duration="1000" className='grid'>
       <div data-aos="fade-left" data-aos-duration="2000">
         <MdFolderSpecial />
         {projects}

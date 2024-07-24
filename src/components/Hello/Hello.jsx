@@ -26,15 +26,15 @@ const Hello = ({lang}) => {
             setName("Eu sou Bruno Trindade")
             setAbout('Estudante dedicado de Ciência da Computação, apaixonado por tecnologia e resolução de problemas. Comprometido em buscar oportunidades que me permitam aplicar e ampliar meus conhecimentos. Procuro oportunidades de estágio ou projetos de investigação que me permitam desenvolver as minhas competências práticas e contribuir para soluções inovadoras na área tecnológica.')
         }
-        AOS.init()
+        AOS.init();
     }, [lang])
 
     return (
-        <div data-aos="zoom-in" className='hello'>
+        <div data-aos="fade-down" data-aos-duration="1000" className='hello'>
             <h5 data-aos="fade-right" data-aos-duration="1200"><span>{saudacoes} <FaHandPeace /></span></h5>
             <h1 data-aos="fade-right" data-aos-duration="1500">{name}</h1>
-            <p data-aos="fade-right" data-aos-duration="2000">{about}</p>
-            <button data-aos="fade-right" data-aos-duration="2200"  style={{ transition: 'background-color 0.8s ease, color 0.8s ease' }} className='btn'>{btn}</button>
+            <p data-aos="fade-right" data-aos-duration="1800">{about}</p>
+            <button  style={{ transition: 'background-color 0.8s ease, color 0.8s ease' }} data-aos="fade-right" data-aos-duration="1800" className='btn'>{btn}</button>
         </div>
     )
 }

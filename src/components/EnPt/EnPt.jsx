@@ -1,6 +1,6 @@
 import './EnPt.css'
 
-import { useState, useEffect } from 'react'
+import { useState} from 'react'
 
 const EnPt = ({onLangChange}) => {
 
@@ -14,13 +14,12 @@ const EnPt = ({onLangChange}) => {
             return newLang;
         });
     };
-    console.log(lang)
 
     return (
         <>
-            <label className="toggle-label" for="language-toggle">
+            <label className="toggle-label" htmlFor="language-toggle">
                 <input type="checkbox"
-                    class="toggle-input"
+                    className="toggle-input"
                     id="language-toggle"
                     onChange={toggleLanguage}
                     checked={lang}

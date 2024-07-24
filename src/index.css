@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+body{
   background-color: azure;
   color: #000000;
   transition: background-color 0.5s, color 0.5s;

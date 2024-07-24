@@ -13,18 +13,16 @@ const NavBar = ({appOnLangChange}) => {
     appOnLangChange(newLang)
   }
 
-  console.log(language)
-
   return (
     <header>
       <nav className='nav'>
-        <div>
+        <div className='top-div'>
             <DarkMode />
         </div>
-        <div>
+        <div className='name-div'>
           <h2>Bruno Trindade</h2>
         </div>
-        <div>
+        <div className='top-div'>
           <EnPt onLangChange={handleLangChange}/>
         </div>
       </nav>

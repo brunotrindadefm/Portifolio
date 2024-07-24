@@ -62,7 +62,7 @@ body.dark-mode {
 
         &:hover {
             svg {
-            color: $yellow;
+                color: $yellow;
             }
         }
     }
@@ -76,7 +76,7 @@ body.dark-mode {
 
 .hello.dark-mode {
     h1 {
-        color: $yellow;
+        color: $black;
     }
 
     h5 {
@@ -86,11 +86,13 @@ body.dark-mode {
     }
 
     p {
-        color: $yellow;
+        color: $black;
     }
+
     .btn {
         background-color: $wood;
         color: $azure;
+
         &:hover {
             background-color: $yellow;
             color: $black;
@@ -101,5 +103,13 @@ body.dark-mode {
 .footer.dark-mode {
     .social {
         background: $yellow;
+
+        .github:hover {
+            color: #ff6868;
+        }
+
+        .linkedin:hover {
+            color: rgb(96, 135, 243);
+        }
     }
 }

@@ -1,5 +1,6 @@
 @import '../Variables.scss';
 
+
 .nav {
     @include dCenter;
     justify-content: space-between;
@@ -7,10 +8,22 @@
     padding: 2rem;
     color: $azure;
     background: $transparent;
+
     h2 {
         font-size: 2rem;
     }
-    @media(max-width: 550px) {
-       
+
+    @media(max-width: 650px) {
+
+        flex-direction: column;
+        gap: 2rem;
+
+        .top-div {
+            order: 1;
+        }
+
+        .name-div {
+            order: 2;
+        }
     }
 }

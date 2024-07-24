@@ -14,8 +14,6 @@ function App() {
     setLang(newLang)
   }
 
-  console.log(lang)
-
   return (
     <>
       <NavBar appOnLangChange={handleLangChange}/>
