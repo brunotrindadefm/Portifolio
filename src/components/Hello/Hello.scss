@@ -6,7 +6,7 @@
     align-items: flex-start;
     height: 60%;
     margin-bottom: 1.5rem;
-    width: 40%;
+    width: 50%;
     gap: 1rem;
    
 
@@ -20,8 +20,11 @@
         margin-bottom: 0;
     }
 
-    @media(max-width: 217px) {
+    @media(max-width: 380px) {
         margin-top: 3rem;
+    }
+    @media(max-width: 270px) {
+        margin-top: 4rem;
     }
    
     span {

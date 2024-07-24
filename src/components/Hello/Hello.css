@@ -6,7 +6,7 @@
   align-items: flex-start;
   height: 60%;
   margin-bottom: 1.5rem;
-  width: 40%;
+  width: 50%;
   gap: 1rem;
 }
 @media (max-width: 1417px) {
@@ -21,9 +21,14 @@
     margin-bottom: 0;
   }
 }
-@media (max-width: 217px) {
+@media (max-width: 380px) {
   .hello {
     margin-top: 3rem;
+  }
+}
+@media (max-width: 270px) {
+  .hello {
+    margin-top: 4rem;
   }
 }
 .hello span {
