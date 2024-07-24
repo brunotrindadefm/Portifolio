@@ -7,6 +7,7 @@
     height: 60%;
     width: 40%;
     gap: 1rem;
+   
 
     @media(max-width: 1417px) {
         width: 46%;
@@ -14,26 +15,18 @@
 
     @media(max-width: 1210px) {
         width: 100%;
+        margin-top: 2rem;
     }
    
     span {
         color: $gold;
         font-size: 2rem;
-        @media(max-width: 350px) {
-            font-size: 1.5rem;
-        }
     }
 
     h1 {
         font-size: 2.8rem;
         color: $azure;
         font-weight: bold;
-        @media(max-width: 350px) {
-            font-size: 2.4rem;
-        }
-        @media(max-width: 235px) {
-            font-size: 2rem;   
-        }    
     }
 
     p {
@@ -43,10 +36,10 @@
         @media(max-width: 350px) {
             font-size: 1.2rem;
         }
-        @media(max-width: 235px) {
-            font-size: 1rem;
-        }
-    }
+        @media(max-width: 280px) {
+            font-size: 1.1rem;
+        }   
+         }
 
     button {
         background-color: $gold;

@@ -22,17 +22,19 @@ const Contact = ({ lang, xIsClick }) => {
     })
 
     return (
-        <div className='contact'>
-            <IoCloseSharp onClick={xWasClick} />
-            <h2>{contact}</h2>
-            <p>btrindade172@gmail.com</p>
-            <p>31 99069-6032</p>
-            <p>Belo Horizonte-MG</p>
-            <p>Serra</p>
-            <p>Professor Estevao Pinto</p>
-            <span>{msg}</span>
-            <button>Whatsapp</button>
-        </div>
+        <>
+            <div className='contact'>
+                <h2>{contact}</h2>
+                <p>btrindade172@gmail.com</p>
+                <p>31 99069-6032</p>
+                <p>Belo Horizonte-MG</p>
+                <p>Serra</p>
+                <p>Professor Estevao Pinto</p>
+                <span>{msg}</span>
+                <button>Whatsapp</button>
+            </div>
+            <IoCloseSharp className='contact-icon' onClick={xWasClick} />
+        </>
     )
 }
 
