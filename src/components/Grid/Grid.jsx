@@ -10,11 +10,15 @@ import { useState, useEffect } from 'react';
 
 import { Link } from 'react-router-dom';
 
-const Grid = ({ lang }) => {
+const Grid = ({ lang, handleContact }) => {
 
   const [projects, setProjects] = useState('')
   const [me, setMe] = useState('')
   const [contact, setContact] = useState('')
+
+  const clickContact = () => {
+    handleContact(true);
+  };
 
   useEffect(() => {
     if (lang) {
@@ -39,10 +43,10 @@ const Grid = ({ lang }) => {
         <SiAboutdotme />
         {me}
       </div></Link>
-      <Link to='/contact'><div data-aos="fade-up" data-aos-duration="3000">
+      <div onClick={clickContact} data-aos="fade-up" data-aos-duration="3000">
         <MdConnectWithoutContact />
         {contact}
-      </div></Link>
+      </div>
     </div>
   )
 }

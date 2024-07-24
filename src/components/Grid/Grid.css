@@ -12,6 +12,26 @@
     height: 100%;
   }
 }
+.grid div {
+  background-color: transparent;
+  border: 2px solid #F0FFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #696969;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 10px;
+  padding: 0.6rem 0;
+}
+.grid div svg {
+  font-size: 5rem;
+  transition: 0.4s;
+}
+.grid div:hover svg {
+  color: #F0FFFF;
+}
 .grid a {
   text-decoration: none;
 }

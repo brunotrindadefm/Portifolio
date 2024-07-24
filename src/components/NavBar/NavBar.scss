@@ -8,14 +8,18 @@
     padding: 2rem;
     color: $azure;
     background: $transparent;
+    border-bottom: 2px solid $azure;
 
     h2 {
-        font-size: 2rem;
         text-align: center;
+        a {
+            text-decoration: none;
+            color: $azure;
+        }   
     }
-
+   
     @media(max-width: 650px) {
-
+        padding: 1rem;
         flex-direction: column;
         gap: 2rem;
 

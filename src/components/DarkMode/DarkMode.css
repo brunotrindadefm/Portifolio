@@ -55,7 +55,10 @@ body.dark-mode {
   color: #FFD700;
 }
 
-.nav.dark-mode h2 {
+.nav.dark-mode {
+  border-bottom: solid 2px #000;
+}
+.nav.dark-mode h2 a {
   color: #FFD700;
 }
 
@@ -77,6 +80,9 @@ body.dark-mode {
   color: #000;
 }
 
+.footer.dark-mode {
+  border-top: solid 2px #000;
+}
 .footer.dark-mode .social {
   background: #FFD700;
 }

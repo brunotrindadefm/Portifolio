@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import DarkMode from '../DarkMode/DarkMode'
 import EnPt from '../EnPt/EnPt'
 import './NavBar.css'
@@ -20,7 +21,7 @@ const NavBar = ({appOnLangChange}) => {
             <DarkMode />
         </div>
         <div className='name-div'>
-          <h2>Bruno Trindade</h2>
+          <h2><Link to='/'>Bruno Trindade</Link></h2>
         </div>
         <div className='top-div'>
           <EnPt onLangChange={handleLangChange}/>

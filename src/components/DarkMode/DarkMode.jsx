@@ -10,10 +10,14 @@ const DarkMode = () => {
         const classAction = darkMode ? 'add' : 'remove';
         const bodyAction = darkMode ? 'remove' : 'add';
         document.body.classList[bodyAction]('dark-mode');
-        document.querySelector('.grid').classList[classAction]('dark-mode');
-        document.querySelector('.nav').classList[classAction]('dark-mode');
-        document.querySelector('.hello').classList[classAction]('dark-mode');
-        document.querySelector('.footer').classList[classAction]('dark-mode');
+
+        const elements = ['.grid', '.nav', '.hello', '.footer'];
+        elements.forEach(selector => {
+            const element = document.querySelector(selector);
+            if (element) {
+                element.classList[classAction]('dark-mode');
+            }
+        });
     }, [darkMode]);
 
     const handleToggle = () => {
