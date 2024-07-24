@@ -1,0 +1,37 @@
+@import '../Variables.scss';
+
+.footer {
+    @include dCenter;
+    width: 100%;
+    background: $transparent;
+    color: $azure;
+    gap: 2rem;
+    padding: 1rem 0;
+
+    .social {
+        @include dCenter;
+        background: $black;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+
+        a {
+           @include dCenter;
+            color: $azure;
+        }
+
+        .github:hover {
+            color: red;
+        }
+
+        .linkedin:hover {
+            color: blue;
+        }
+
+        svg {
+            font-size: 1.8rem;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+    }
+}

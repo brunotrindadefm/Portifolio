@@ -1,0 +1,84 @@
+.toggle-label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.toggle-label .toggle-input {
+  display: none;
+}
+.toggle-label .toggle-slider {
+  position: relative;
+  width: 4em;
+  height: 2em;
+  background-color: #d1d9e6;
+  border-radius: 15px;
+  transition: 0.4s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  font-size: 14px;
+  color: #394a56;
+}
+.toggle-label .toggle-slider::before {
+  content: "EN";
+  position: absolute;
+  left: 8px;
+  transition: opacity 0.3s;
+}
+.toggle-label .toggle-slider::after {
+  content: "PT";
+  position: absolute;
+  right: 8px;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+.toggle-label .toggle-slider::before, .toggle-label .toggle-slider::after {
+  font-weight: bold;
+}
+.toggle-label .toggle-slider::before {
+  opacity: 1;
+}
+.toggle-label .toggle-slider::after {
+  opacity: 0;
+}
+.toggle-label .toggle-slider::before, .toggle-label .toggle-slider::after {
+  transition: opacity 0.3s;
+}
+.toggle-label .toggle-input:checked + .toggle-slider {
+  background-color: #4CAF50;
+}
+.toggle-label .toggle-input:checked + .toggle-slider::before {
+  opacity: 0;
+}
+.toggle-label .toggle-input:checked + .toggle-slider::after {
+  opacity: 1;
+}
+.toggle-label .toggle-slider::before {
+  content: "EN";
+  position: absolute;
+  left: 8px;
+  transition: opacity 0.3s;
+}
+.toggle-label .toggle-slider::after {
+  content: "PT";
+  position: absolute;
+  right: 8px;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+.toggle-label .toggle-input:checked + .toggle-slider::before {
+  opacity: 0;
+}
+.toggle-label .toggle-input:checked + .toggle-slider::after {
+  opacity: 1;
+}
+.toggle-label .toggle-slider::before,
+.toggle-label .toggle-slider::after {
+  font-weight: bold;
+}/*# sourceMappingURL=EnPt.css.map */

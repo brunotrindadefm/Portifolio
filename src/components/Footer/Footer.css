@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: transparent;
+  color: #F0FFFF;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+.footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.footer .social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F0FFFF;
+}
+.footer .social .github:hover {
+  color: red;
+}
+.footer .social .linkedin:hover {
+  color: blue;
+}
+.footer .social svg {
+  font-size: 1.8rem;
+  transition: 0.5s;
+  cursor: pointer;
+}/*# sourceMappingURL=Footer.css.map */

@@ -1,0 +1,14 @@
+$azure: #F0FFFF;
+$gold: #FFE4C4;
+$transparent: transparent;
+$black: #000;
+$radius: 10px;
+$dimmgrey: #696969;
+$wood: #DEB887;
+$yellow: #FFD700;
+
+@mixin dCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

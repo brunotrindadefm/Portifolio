@@ -1,0 +1,16 @@
+@import '../Variables.scss';
+
+.nav {
+    @include dCenter;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem;
+    color: $azure;
+    background: $transparent;
+    h2 {
+        font-size: 2rem;
+    }
+    @media(max-width: 550px) {
+       
+    }
+}

@@ -1,0 +1,13 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+  color: #F0FFFF;
+  background: transparent;
+}
+.nav h2 {
+  font-size: 2rem;
+}/*# sourceMappingURL=NavBar.css.map */
