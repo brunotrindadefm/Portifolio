@@ -13,7 +13,8 @@ html {
   height: 100%;
   display: flex;
   flex-direction: column;
-  scrollbar-color: rgb(0, 0, 94) #222; 
+  scrollbar-color: rgb(0, 0, 94) #222;
+  transition: 0.5s;
 }
 
 #root {

@@ -4,28 +4,21 @@ import { useState, useEffect } from 'react';
 
 const DarkMode = () => {
 
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(false)
 
     useEffect(() => {
-        if (!darkMode) {
-            document.body.classList.add('dark-mode');
-            document.querySelector('.grid').classList.remove('dark-mode');
-            document.querySelector('.nav').classList.remove('dark-mode');
-            document.querySelector('.hello').classList.remove('dark-mode');
-            document.querySelector('.footer').classList.remove('dark-mode');
-        } else {
-            document.body.classList.remove('dark-mode');
-            document.querySelector('.grid').classList.add('dark-mode');
-            document.querySelector('.nav').classList.add('dark-mode');
-            document.querySelector('.hello').classList.add('dark-mode');
-            document.querySelector('footer').classList.add('dark-mode');
-        }
+        const classAction = darkMode ? 'add' : 'remove';
+        const bodyAction = darkMode ? 'remove' : 'add';
+        document.body.classList[bodyAction]('dark-mode');
+        document.querySelector('.grid').classList[classAction]('dark-mode');
+        document.querySelector('.nav').classList[classAction]('dark-mode');
+        document.querySelector('.hello').classList[classAction]('dark-mode');
+        document.querySelector('.footer').classList[classAction]('dark-mode');
     }, [darkMode]);
 
     const handleToggle = () => {
-        setDarkMode(!darkMode);
+        setDarkMode(prevMode => !prevMode);
     };
-
 
     return (
         <label className="switch">

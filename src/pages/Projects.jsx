@@ -1,10 +1,18 @@
-import React from 'react'
+import NavBar from '../components/NavBar/NavBar'
+import { useState } from 'react'
 
 const Projects = () => {
+
+  const [lang, setLang] = useState('')
+
+  const handleLangChange = (newLang) => {
+    setLang(newLang)
+  }
+
   return (
-    <div>
-      <h2>Projects</h2>
-    </div>
+    <>
+      <NavBar appOnLangChange={handleLangChange}/>
+    </>
   )
 }
 
