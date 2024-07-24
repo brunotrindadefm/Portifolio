@@ -1,3 +1,7 @@
+$base-padding: 1rem;
+$gap-large: 3rem;
+$gap-medium: 1.5rem;
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +26,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: $base-padding;
 }
 
 .portifolio {
@@ -32,17 +36,15 @@ html {
   width: 80%;
   max-width: 1500px;
   height: 100%;
-}
-@media (max-width: 1210px) {
-  .portifolio {
+
+  @media(max-width: 1210px) {
     flex-direction: column;
-    gap: 3rem;
+    gap: $gap-large;
     width: 90%;
   }
-}
-@media (max-width: 768px) {
-  .portifolio {
-    gap: 1.5rem;
+
+  @media(max-width: 768px) {
+    gap: $gap-medium;
     width: 95%;
   }
-}/*# sourceMappingURL=index.css.map */
+}
