@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: flex-start;
     height: 60%;
+    margin-bottom: 1.5rem;
     width: 40%;
     gap: 1rem;
    
@@ -16,6 +17,11 @@
     @media(max-width: 1210px) {
         width: 100%;
         margin-top: 2rem;
+        margin-bottom: 0;
+    }
+
+    @media(max-width: 217px) {
+        margin-top: 3rem;
     }
    
     span {
