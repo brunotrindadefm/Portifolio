@@ -4,17 +4,24 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: azure;
-  color: #000000;
-  transition: background-color 0.5s, color 0.5s;
+body, html {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .app {
+  flex: 1; 
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 9.5rem 0;
+  padding: 1rem; 
 }
 
 .portifolio {
