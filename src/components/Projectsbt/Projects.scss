@@ -26,6 +26,7 @@
             font-size: 2.8rem;
             color: $azure;
             margin-bottom: 2rem;
+
             @media(max-width: 266px) {
                 font-size: 2rem;
             }
@@ -46,6 +47,7 @@
             background-color: rgb(0, 0, 94);
             padding: 1.2rem;
             border-radius: $radius;
+            overflow: hidden;
 
             .icons {
                 @include dCenter;
@@ -68,6 +70,12 @@
                 width: 100%;
                 margin-bottom: .5rem;
                 border-radius: $radius;
+                transition: 0.4s ease;
+
+                &:hover {
+                    transform: scale(1.08);
+                    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+                }
             }
 
             h3 {
@@ -85,13 +93,24 @@
                 border-radius: $radius;
                 cursor: pointer;
                 border: none;
-                background-color: rgb(95, 4, 4);
-                color: $azure;
+                background-color: $black;
+                font-weight: bold;
+                color: rgb(0, 0, 94);
                 transition: 0.5s;
+                border: 2px solid $transparent;
 
                 &:hover {
                     background-color: $transparent;
+                    border: 2px solid $black;
+                    color: $black;
                 }
+            }
+
+            p {
+                color: $azure;
+                text-align: center;
+                margin-top: 1rem;
+                font-size: 1.5rem;
             }
         }
 
