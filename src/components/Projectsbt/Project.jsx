@@ -23,7 +23,7 @@ const Project = ({ lang }) => {
         {
             name: 'API Movies',
             image: '/apiMovies.png',
-            technologies: [<FaReact key="react" />, <FaCss3Alt key='css' />],
+            technologies: [<FaReact key="react" />, <FaSass key='sass' />],
             description: {
                 en: 'A project about movies data fetching using a public API.',
                 pt: 'Um projeto sobre busca de dados de filmes usando uma API pública.'
@@ -78,7 +78,7 @@ const Project = ({ lang }) => {
         {
             name: 'Calculadora',
             image: '/calculadora.png',
-            technologies: [<FaReact key="react" />, <FaCss3Alt key="css" />],
+            technologies: [<FaReact key="react" />, <FaSass key="sass" />],
             description: {
                 en: 'A basic calculator project.',
                 pt: 'Um projeto de calculadora básica.'
