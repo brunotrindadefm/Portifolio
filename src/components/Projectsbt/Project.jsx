@@ -6,16 +6,28 @@ import { useState } from "react";
 const Project = ({ lang }) => {
 
     const [selectedProjectIndex, setSelectedProjectIndex] = useState(null);
-       
+    const [arrowUp, setArrowUp] = useState(false)
+
     const projects = [
+        {
+            name: 'Portifólio',
+            image: '/portifolio.png',
+            technologies: [<FaReact key='react' />, <FaSass key='sass' />],
+            description: {
+                en: 'My portfolio, where I talk about myself and my projects',
+                pt: 'Meu portifólio, onde falo sobre mim e sobre meus projetos'
+            },
+            github: 'https://github.com/brunotrindadefm/portif-lio'
+        },
         {
             name: 'API Movies',
             image: '/apiMovies.png',
-            technologies: [<FaReact key="react" />, <FaSass key='sass' />],
+            technologies: [<FaReact key="react" />, <FaCss3Alt key='css' />],
             description: {
                 en: 'A project about movies data fetching using a public API.',
                 pt: 'Um projeto sobre busca de dados de filmes usando uma API pública.'
-            }
+            },
+            github: 'https://github.com/brunotrindadefm/APIMovies'
         },
         {
             name: 'API Clima',
@@ -24,7 +36,8 @@ const Project = ({ lang }) => {
             description: {
                 en: 'A weather application using a weather API.',
                 pt: 'Um aplicativo de clima usando uma API de clima.'
-            }
+            },
+            github: 'https://github.com/brunotrindadefm/WeatherAPI'
         },
         {
             name: 'API Spotify',
@@ -33,7 +46,8 @@ const Project = ({ lang }) => {
             description: {
                 en: 'A music streaming project using Spotify API.',
                 pt: 'Um projeto de streaming de música usando a API do Spotify.'
-            }
+            },
+            github: 'https://github.com/brunotrindadefm/apiSpotify'
         },
         {
             name: 'Tic Tac Toe',
@@ -42,7 +56,8 @@ const Project = ({ lang }) => {
             description: {
                 en: 'A simple Tic Tac Toe game.',
                 pt: 'Um jogo simples de Tic Tac Toe.'
-            }
+            },
+            github: 'https://github.com/brunotrindadefm/TicTacToe'
         },
         {
             name: 'API Cep',
@@ -50,8 +65,9 @@ const Project = ({ lang }) => {
             technologies: [<FaReact key="react" />, <FaCss3Alt key="css" />],
             description: {
                 en: 'A project for fetching and displaying Brazilian postal codes.',
-                pt: 'Um projeto para buscar e exibir códigos postais brasileiros.'
-            }
+                pt: 'Um projeto para buscar e exibir CEP.'
+            },
+            github: 'https://github.com/brunotrindadefm/BuscadorCEP'
         },
         {
             name: 'Calculadora',
@@ -60,7 +76,8 @@ const Project = ({ lang }) => {
             description: {
                 en: 'A basic calculator project.',
                 pt: 'Um projeto de calculadora básica.'
-            }
+            },
+            github: 'https://github.com/brunotrindadefm/calculadora'
         },
         {
             name: 'Treinamento Mira',
@@ -69,7 +86,8 @@ const Project = ({ lang }) => {
             description: {
                 en: 'An aim training tool for gamers.',
                 pt: 'Uma ferramenta de treinamento de mira para jogadores.'
-            }
+            },
+            github: 'https://github.com/brunotrindadefm/TreinamentoDeMira'
         },
         {
             name: 'Calculadora de IMC',
@@ -78,12 +96,14 @@ const Project = ({ lang }) => {
             description: {
                 en: 'A BMI calculator project.',
                 pt: 'Um projeto de calculadora de IMC.'
-            }
+            },
+            github: 'https://github.com/brunotrindadefm/CalculadoraIMC'
         }
     ];
 
     const handleInfoClick = (index) => {
         setSelectedProjectIndex(index === selectedProjectIndex ? null : index);
+        setArrowUp(true);
     }
 
     return (
@@ -97,10 +117,17 @@ const Project = ({ lang }) => {
                             <span key={i}>{Icon}</span>
                         ))}
                     </div>
-                    <button className='btn' onClick={() => handleInfoClick(index)} aria-label={`More info about project ${index + 1}`}>Info</button>
-                    {selectedProjectIndex === index && (
-                        <p>{lang ? project.description.pt : project.description.en}</p>
-                    )}
+                    <div className="btn">
+                        <a href={project.deploy} target="_blank"><button className="btn-project">Deploy</button></a>
+                        <a href={project.github} target="_blank"><button className="btn-project">Repositório</button></a>
+                        <button className='readMore' onClick={() => handleInfoClick(index)} aria-label={`More info about project ${index + 1}`}>
+                            {lang ? 'Ler Mais' : 'Read More'}
+                            <span className={selectedProjectIndex === index ? 'arrowup' : 'arrowdown'}></span>
+                        </button>
+                        {selectedProjectIndex === index && (
+                            <p>{lang ? project.description.pt : project.description.en}</p>
+                        )}
+                    </div>
                 </div>
             ))}
         </div>
