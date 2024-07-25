@@ -34,16 +34,16 @@ const Grid = ({ lang, handleContact }) => {
   }, [lang])
 
   return (
-    <div data-aos="fade-up" data-aos-duration="1000" className='grid'>
+    <div data-aos="fade-up" className='grid'>
       <Link to='/projects'><div data-aos="fade-up" data-aos-duration="2000">
         <MdFolderSpecial />
         {projects}
       </div></Link>
-      <Link to='/about'><div data-aos="fade-down" data-aos-duration="2500">
+      <Link to='/about'><div data-aos="fade-down" data-aos-duration="2000">
         <SiAboutdotme />
         {me}
       </div></Link>
-      <div onClick={clickContact} data-aos="fade-up" data-aos-duration="3000">
+      <div onClick={clickContact} data-aos="fade-right" data-aos-duration="2000">
         <MdConnectWithoutContact />
         {contact}
       </div>

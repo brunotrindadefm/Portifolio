@@ -30,11 +30,11 @@ const Hello = ({lang}) => {
     }, [lang])
 
     return (
-        <div data-aos="fade-up" data-aos-duration="1000" className='hello'>
-            <h5 data-aos="fade-up" data-aos-duration="1200"><span>{saudacoes} <FaHandPeace /></span></h5>
+        <div data-aos="fade-up"  className='hello'>
+            <h5 data-aos="fade-left" data-aos-duration="1800"><span>{saudacoes} <FaHandPeace /></span></h5>
             <h1 data-aos="fade-up" data-aos-duration="1500">{name}</h1>
-            <p data-aos="fade-down" data-aos-duration="1800">{about}</p>
-            <button  style={{ transition: 'background-color 0.8s ease, color 0.8s ease' }} className='btn'>{btn}</button>
+            <p data-aos="fade-down" data-aos-duration="2000">{about}</p>
+            <button data-aos="fade-left" data-aos-duration="1800" className='btn'>{btn}</button>
         </div>
     )
 }
