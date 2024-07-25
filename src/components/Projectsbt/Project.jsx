@@ -17,6 +17,7 @@ const Project = ({ lang }) => {
                 en: 'My portfolio, where I talk about myself and my projects',
                 pt: 'Meu portifólio, onde falo sobre mim e sobre meus projetos'
             },
+            deploy: 'https://brunotrindadefriaca.netlify.app/',
             github: 'https://github.com/brunotrindadefm/portif-lio'
         },
         {
@@ -27,6 +28,7 @@ const Project = ({ lang }) => {
                 en: 'A project about movies data fetching using a public API.',
                 pt: 'Um projeto sobre busca de dados de filmes usando uma API pública.'
             },
+            deploy: 'https://btmovies.netlify.app/',
             github: 'https://github.com/brunotrindadefm/APIMovies'
         },
         {
@@ -37,6 +39,7 @@ const Project = ({ lang }) => {
                 en: 'A weather application using a weather API.',
                 pt: 'Um aplicativo de clima usando uma API de clima.'
             },
+            deploy: 'https://weathertrindade.netlify.app/',
             github: 'https://github.com/brunotrindadefm/WeatherAPI'
         },
         {
@@ -44,9 +47,10 @@ const Project = ({ lang }) => {
             image: '/apiSpotify.png',
             technologies: [<FaReact key="react" />, <FaCss3Alt key="css" />],
             description: {
-                en: 'A music streaming project using Spotify API.',
-                pt: 'Um projeto de streaming de música usando a API do Spotify.'
+                en: "A music streaming project using Spotify API. You need to update the token every 30 minutes, which is why the website doesn't work",
+                pt: 'Um projeto de streaming de música usando a API do Spotify. Precisa atualizar o token de 30 em 30 minutos, por isso o site não funcionará'
             },
+            deploy: 'https://tourmaline-gelato-68d561.netlify.app/',
             github: 'https://github.com/brunotrindadefm/apiSpotify'
         },
         {
