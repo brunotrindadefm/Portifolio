@@ -75,6 +75,7 @@ body.dark-mode {
             color: $yellow;
         }
     }
+
     border-bottom: solid 2px $black;
 }
 
@@ -106,6 +107,7 @@ body.dark-mode {
 
 .footer.dark-mode {
     border-top: solid 2px $black;
+
     .social {
         background: $yellow;
 
@@ -115,6 +117,62 @@ body.dark-mode {
 
         .linkedin:hover {
             color: rgb(96, 135, 243);
+        }
+    }
+}
+
+.projects-container.dark-mode {
+
+    .projects-tit {
+        h2 {
+            color: $yellow;
+        }
+
+        div {
+            background-color: $yellow;
+        }
+    }
+
+    .card-projects {
+        div {
+            background-color: $gold;
+
+            p {
+                color: $black;
+            }
+
+            h3 {
+                color: $azure;
+            }
+
+            .icons {
+                span {
+                    color: $azure;
+
+                    &:hover {
+                        color: $dimmgrey;
+                    }
+                }
+            }
+
+            .btn {
+                a {
+                    border: 2px solid $transparent;
+                    &:hover {
+                        border: 2px solid $azure;
+                    }
+
+                    .btn-project {
+                        background-color: $creme;
+                        color: $black;
+                        border: none;
+
+                        &:hover {
+                            color: $azure;
+                        }
+                    }
+                }
+            }
         }
     }
 }

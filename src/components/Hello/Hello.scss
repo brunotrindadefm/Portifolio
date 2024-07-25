@@ -6,8 +6,7 @@
     align-items: flex-start;
     margin: 4rem 0 4.5rem;
     width: 50%;
-    gap: 1rem;
-   
+    gap: 1rem;   
 
     @media(max-width: 1417px) {
         width: 46%;
@@ -56,7 +55,7 @@
         border: none;
         cursor: pointer;
         border-radius: $radius;
-        transition: 0.4s;
+        transition: $seg;
 
         &:hover {
             background-color: $azure;

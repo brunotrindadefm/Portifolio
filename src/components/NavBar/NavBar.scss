@@ -9,16 +9,19 @@
     color: $azure;
     background: $transparent;
     border-bottom: 2px solid $azure;
+    transition: $seg;
 
     h2 {
         text-align: center;
+
         a {
             text-decoration: none;
             color: $azure;
             font-weight: bold;
-        }   
+            transition: $seg;
+        }
     }
-   
+
     @media(max-width: 650px) {
         padding: 1rem;
         flex-direction: column;

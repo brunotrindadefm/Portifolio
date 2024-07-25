@@ -21,13 +21,13 @@
   flex-direction: column;
   color: #696969;
   cursor: pointer;
-  transition: 0.4s;
+  transition: 0.5s;
   border-radius: 10px;
   padding: 0.6rem 0;
 }
 .grid div svg {
   font-size: 5rem;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 .grid div:hover svg {
   color: #F0FFFF;
@@ -44,13 +44,13 @@
   flex-direction: column;
   color: #696969;
   cursor: pointer;
-  transition: 0.4s;
+  transition: 0.5s;
   border-radius: 10px;
   padding: 1rem 0;
 }
 .grid a div svg {
   font-size: 5rem;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 .grid a div:hover svg {
   color: #F0FFFF;

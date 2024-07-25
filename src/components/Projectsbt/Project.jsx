@@ -123,7 +123,7 @@ const Project = ({ lang }) => {
                     </div>
                     <div className="btn">
                         <a href={project.deploy} target="_blank"><button className="btn-project">Deploy</button></a>
-                        <a href={project.github} target="_blank"><button className="btn-project">Repositório</button></a>
+                        <a href={project.github} target="_blank"><button className="btn-project">{lang ? 'Repositótrio' : 'Repository'}</button></a>
                         <button className='readMore' onClick={() => handleInfoClick(index)} aria-label={`More info about project ${index + 1}`}>
                             {lang ? 'Ler Mais' : 'Read More'}
                             <span className={selectedProjectIndex === index ? 'arrowup' : 'arrowdown'}></span>

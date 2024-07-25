@@ -11,18 +11,21 @@
         flex-direction: column;
         width: 100%;
         text-align: center;
+        color: $azure;
         margin: 1rem 0 1.5rem;
 
         div {
             width: 80%;
-            height: 2px;
-            background-color: blue;
+            height: 3px;
+            background-color: rgb(63, 63, 255);
+            transition: $seg;
         }
 
         h2 {
             font-size: 2.8rem;
             color: $azure;
             margin-bottom: 2rem;
+            transition: $seg;
 
             @media (max-width: 266px) {
                 font-size: 2rem;
@@ -40,24 +43,25 @@
 
         div {
             max-width: 400px;
-            background-color: rgb(0, 0, 94);
+            background-color: $bluedark;
             padding: 1rem;
             border-radius: $radius;
             overflow: hidden;
-           
+            transition: $seg;
+
             .icons {
                 @include dCenter;
                 font-size: 2rem;
                 gap: 0.8rem;
-                color: $azure;
+                color: $creme;
                 margin: -0.5rem 0 -1.5rem;
                 flex-wrap: wrap;
 
                 span {
-                    transition: 0.4s;
+                    transition: $seg;
 
                     &:hover {
-                        color: $dimmgrey;
+                        color: $azure;
                     }
                 }
             }
@@ -75,7 +79,7 @@
             }
 
             h3 {
-                color: $azure;
+                color: $creme;
                 text-align: center;
                 font-weight: bold;
                 font-size: 1.5rem;
@@ -91,10 +95,14 @@
                     text-decoration: none;
                     @include dCenter;
                     width: 100%;
-                    transition: 0.5s;
-                    border: 2px solid $black;
+                    transition: $seg;
+                    border: 2px solid $transparent;
                     border-radius: $radius;
-                   
+
+                    &:hover {
+                        border: 2px solid $wood;
+                    }
+
                     .btn-project {
                         @include dCenter;
                         font-size: 1.5rem;
@@ -103,13 +111,14 @@
                         border-radius: $radius;
                         cursor: pointer;
                         border: none;
-                        background-color: $black;
+                        background-color: $wood;
                         font-weight: bold;
-                        color: $azure;
-                        transition: 0.5s;
-                        
+                        color: $bluedark;
+                        transition: $seg;
+
                         &:hover {
                             background-color: $transparent;
+                            color: $wood;
                         }
 
                         @media (max-width: 330px) {

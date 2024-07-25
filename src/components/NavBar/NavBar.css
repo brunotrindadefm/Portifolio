@@ -8,6 +8,7 @@
   color: #F0FFFF;
   background: transparent;
   border-bottom: 2px solid #F0FFFF;
+  transition: 0.5s;
 }
 .nav h2 {
   text-align: center;
@@ -16,6 +17,7 @@
   text-decoration: none;
   color: #F0FFFF;
   font-weight: bold;
+  transition: 0.5s;
 }
 @media (max-width: 650px) {
   .nav {

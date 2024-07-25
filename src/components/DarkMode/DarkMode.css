@@ -91,4 +91,40 @@ body.dark-mode {
 }
 .footer.dark-mode .social .linkedin:hover {
   color: rgb(96, 135, 243);
+}
+
+.projects-container.dark-mode .projects-tit h2 {
+  color: #FFD700;
+}
+.projects-container.dark-mode .projects-tit div {
+  background-color: #FFD700;
+}
+.projects-container.dark-mode .card-projects div {
+  background-color: #FFE4C4;
+}
+.projects-container.dark-mode .card-projects div p {
+  color: #000;
+}
+.projects-container.dark-mode .card-projects div h3 {
+  color: #F0FFFF;
+}
+.projects-container.dark-mode .card-projects div .icons span {
+  color: #F0FFFF;
+}
+.projects-container.dark-mode .card-projects div .icons span:hover {
+  color: #696969;
+}
+.projects-container.dark-mode .card-projects div .btn a {
+  border: 2px solid transparent;
+}
+.projects-container.dark-mode .card-projects div .btn a:hover {
+  border: 2px solid #F0FFFF;
+}
+.projects-container.dark-mode .card-projects div .btn a .btn-project {
+  background-color: #fffdd0;
+  color: #000;
+  border: none;
+}
+.projects-container.dark-mode .card-projects div .btn a .btn-project:hover {
+  color: #F0FFFF;
 }/*# sourceMappingURL=DarkMode.css.map */

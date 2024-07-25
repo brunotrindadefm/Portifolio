@@ -11,7 +11,7 @@ const DarkMode = () => {
         const bodyAction = darkMode ? 'remove' : 'add';
         document.body.classList[bodyAction]('dark-mode');
 
-        const elements = ['.grid', '.nav', '.hello', '.footer'];
+        const elements = ['.grid', '.nav', '.hello', '.footer', '.projects-container'];
         elements.forEach(selector => {
             const element = document.querySelector(selector);
             if (element) {
