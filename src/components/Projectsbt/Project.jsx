@@ -61,6 +61,7 @@ const Project = ({ lang }) => {
                 en: 'A simple Tic Tac Toe game.',
                 pt: 'Um jogo simples de Tic Tac Toe.'
             },
+            deploy: 'https://bttictactoe.netlify.app/',
             github: 'https://github.com/brunotrindadefm/TicTacToe'
         },
         {
@@ -71,6 +72,7 @@ const Project = ({ lang }) => {
                 en: 'A project for fetching and displaying Brazilian postal codes.',
                 pt: 'Um projeto para buscar e exibir CEP.'
             },
+            deploy: 'https://btcep.netlify.app/',
             github: 'https://github.com/brunotrindadefm/BuscadorCEP'
         },
         {
@@ -81,16 +83,18 @@ const Project = ({ lang }) => {
                 en: 'A basic calculator project.',
                 pt: 'Um projeto de calculadora básica.'
             },
+            deploy: 'https://btcalculator.netlify.app/',
             github: 'https://github.com/brunotrindadefm/calculadora'
         },
         {
             name: 'Treinamento Mira',
             image: '/TreinamentoAim.png',
-            technologies: [<FaHtml5 key="html" />, <FaCss3Alt key="css" />],
+            technologies: [<FaHtml5 key="html" />, <FaCss3Alt key="css" />, <FaBootstrap key='bootstrap' />],
             description: {
                 en: 'An aim training tool for gamers.',
                 pt: 'Uma ferramenta de treinamento de mira para jogadores.'
             },
+            deploy: 'https://btaim.netlify.app/',
             github: 'https://github.com/brunotrindadefm/TreinamentoDeMira'
         },
         {
@@ -101,6 +105,7 @@ const Project = ({ lang }) => {
                 en: 'A BMI calculator project.',
                 pt: 'Um projeto de calculadora de IMC.'
             },
+            deploy: 'https://btimc.netlify.app/',
             github: 'https://github.com/brunotrindadefm/CalculadoraIMC'
         }
     ];
