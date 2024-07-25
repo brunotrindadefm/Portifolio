@@ -4,6 +4,7 @@ import Footer from '../components/Footer/Footer'
 import { useState } from 'react'
 
 import '../index.css'
+import Projectsbt from '../components/Projectsbt/Projectsbt'
 
 const Projects = () => {
 
@@ -17,9 +18,7 @@ const Projects = () => {
     <>
       <NavBar appOnLangChange={handleLangChange} />
       <div className='app'>
-        <div className='portifolio'>
-         
-        </div>
+        <Projectsbt lang={lang}/>
       </div>
       <Footer />
     </>
