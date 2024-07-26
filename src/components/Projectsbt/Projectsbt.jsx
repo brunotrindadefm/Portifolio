@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react'
 import Project from './Project'
 import './Projects.css'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Projectsbt = ({ lang }) => {
 
     const [projectsTitle, setProjectsTitle] = useState('')
@@ -12,13 +15,15 @@ const Projectsbt = ({ lang }) => {
         } else {
             setProjectsTitle('My Projects')
         }
+
+        AOS.init();
     },[lang])
 
     return (
         <div className='projects-container'>
             <div className='projects-tit'>
-                <h2>{projectsTitle}</h2>
-                <div></div>
+                <h2 data-aos="fade-down" data-aos-duration="1000">{projectsTitle}</h2>
+                <div data-aos="fade-up" data-aos-duration="1000"></div>
             </div>
 
            <Project lang={lang} />

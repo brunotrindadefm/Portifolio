@@ -1,7 +1,10 @@
 import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaSass } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Project = ({ lang }) => {
 
@@ -115,10 +118,14 @@ const Project = ({ lang }) => {
         setArrowUp(true);
     }
 
+    useEffect(() => {
+        AOS.init();
+    })
+
     return (
-        <div className='card-projects'>
+        <div className='card-projects' data-aos="fade-right">
             {projects.map((project, index) => (
-                <div key={index}>
+                <div data-aos="fade-up" data-aos-duration="1600" key={index}>
                     <img src={project.image} alt={`Project Thumbnail ${project.name}`} />
                     <h3>{project.name}</h3>
                     <div className="icons">
@@ -126,7 +133,7 @@ const Project = ({ lang }) => {
                             <span key={i}>{Icon}</span>
                         ))}
                     </div>
-                    <div className="btn">
+                    <div className="btn" data-aos="fade-right" data-aos-duration="1200">
                         <a href={project.deploy} target="_blank"><button className="btn-project">Deploy</button></a>
                         <a href={project.github} target="_blank"><button className="btn-project">{lang ? 'Repositótrio' : 'Repository'}</button></a>
                         <button className='readMore' onClick={() => handleInfoClick(index)} aria-label={`More info about project ${index + 1}`}>
