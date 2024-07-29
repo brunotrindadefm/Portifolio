@@ -83,8 +83,8 @@ body.dark-mode {
 .footer.dark-mode {
   border-top: solid 2px #000;
 }
-.footer.dark-mode .social {
-  background: #FFD700;
+.footer.dark-mode .social a {
+  color: #FFD700;
 }
 .footer.dark-mode .social .github:hover {
   color: #ff6868;

@@ -1,0 +1,38 @@
+.me {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #F0FFFF;
+  text-align: center;
+  gap: 1rem;
+  background-color: #101049;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.me .me-img img {
+  margin-bottom: 0.7rem;
+  border-radius: 50%;
+  width: 100%;
+}
+.me .skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.me .skills h2 {
+  margin-bottom: 0.7rem;
+}
+.me .skills .me-skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.me .skills .me-skills p {
+  font-size: 2rem;
+}/*# sourceMappingURL=Me.css.map */
