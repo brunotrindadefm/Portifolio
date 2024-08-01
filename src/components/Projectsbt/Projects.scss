@@ -170,17 +170,18 @@
             p {
                 color: $azure;
                 text-align: center;
-                margin-top: 1rem;
                 font-size: 1.5rem;
+                margin-top: 0;
                 opacity: 0;
                 max-height: 0;
                 overflow: hidden;
-                transition: opacity 0.4s ease, max-height 0.4s ease;
+                transition: opacity 0.4s ease, max-height 0.4s ease, margin-top 0.4s ease;
             }
 
             p.visible {
                 opacity: 1;
                 max-height: 100px;
+                margin-top: 1rem;
             }
             
         }
