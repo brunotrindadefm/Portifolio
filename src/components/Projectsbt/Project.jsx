@@ -125,7 +125,7 @@ const Project = ({ lang }) => {
     return (
         <div className='card-projects' data-aos="fade-right">
             {projects.map((project, index) => (
-                <div data-aos="fade-up" key={index}>
+                <div data-aos="fade-up" data-aos-duration="900" key={index}>
                     <img src={project.image} alt={`Project Thumbnail ${project.name}`} />
                     <h3>{project.name}</h3>
                     <div className="icons">
@@ -133,16 +133,16 @@ const Project = ({ lang }) => {
                             <span key={i}>{Icon}</span>
                         ))}
                     </div>
-                    <div className="btn" data-aos="fade-up" >
+                    <div className="btn" data-aos="fade-up" data-aos-duration="900" >
                         <a href={project.deploy} target="_blank"><button className="btn-project">Deploy</button></a>
                         <a href={project.github} target="_blank"><button className="btn-project">{lang ? 'Repositótrio' : 'Repository'}</button></a>
                         <button className='readMore' onClick={() => handleInfoClick(index)} aria-label={`More info about project ${index + 1}`}>
                             {lang ? 'Ler Mais' : 'Read More'}
                             <span className={selectedProjectIndex === index ? 'arrowup' : 'arrowdown'}></span>
                         </button>
-                        {selectedProjectIndex === index && (
-                            <p>{lang ? project.description.pt : project.description.en}</p>
-                        )}
+                        <p className={selectedProjectIndex === index ? 'visible' : ''}>
+                            {lang ? project.description.pt : project.description.en}
+                        </p>
                     </div>
                 </div>
             ))}
