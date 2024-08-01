@@ -6,7 +6,7 @@
     align-items: flex-start;
     margin: 4rem 0 4.5rem;
     width: 50%;
-    gap: 1rem;   
+    gap: 1rem;
 
     @media(max-width: 1417px) {
         width: 46%;
@@ -21,10 +21,11 @@
     @media(max-width: 380px) {
         margin-top: 3rem;
     }
+
     @media(max-width: 270px) {
         margin-top: 4rem;
     }
-   
+
     span {
         color: $gold;
         font-size: 2rem;
@@ -40,25 +41,31 @@
         color: $azure;
         font-size: 1.5rem;
         letter-spacing: 0.1rem;
+
         @media(max-width: 350px) {
             font-size: 1.2rem;
         }
+
         @media(max-width: 280px) {
             font-size: 1.1rem;
-        }   
-         }
+        }
+    }
 
-    .btn {
-        background-color: $gold;
-        color: $black;
-        padding: 1rem 2rem;
-        border: none;
-        cursor: pointer;
-        border-radius: $radius;
-        transition: $seg;
+    a {
+        text-decoration: none;
+        .btn {
+            @include dCenter;
+            background-color: $gold;
+            color: $black;
+            padding: .9rem 1.5rem;
+            border: none;
+            cursor: pointer;
+            border-radius: $radius;
+            transition: $seg;
 
-        &:hover {
-            background-color: $azure;
+            &:hover {
+                background-color: $azure;
+            }
         }
     }
 }
