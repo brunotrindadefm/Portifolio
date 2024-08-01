@@ -102,6 +102,40 @@
                 cursor: pointer;
             }
         }
+
+        @media(max-height: 512px) {
+            height: 90%;
+
+            .img {
+               width: 7rem;
+               height: 7rem;
+            }
+            .info {
+                font-size: 1rem;
+            }
+            span {
+                font-size: 1.2rem;
+            }
+
+        }
+
+        @media(max-height: 430px) {
+            .img {
+                width: 5rem;
+                height: 5rem;
+                margin-bottom: 1rem;
+            }
+            .info {
+                font-size: .7rem;
+            } 
+            span {
+                font-size: 1rem;
+            }
+            button {
+                padding: .2rem 1rem;
+            }
+        }
+
     }
 }
 
