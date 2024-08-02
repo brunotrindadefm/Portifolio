@@ -60,29 +60,22 @@
     font-size: 0.8rem;
   }
 }
-.container-about .skills-another {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-.container-about .skills-another .skills {
+.container-about .skills {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 40%;
-  margin-left: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
 }
-.container-about .skills-another .skills .skill {
+.container-about .skills .skill {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.4rem;
   flex-wrap: wrap;
 }
-.container-about .skills-another .skills .skill div {
+.container-about .skills .skill div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,10 +85,10 @@
   border-radius: 10px;
   transition: 0.1s ease;
 }
-.container-about .skills-another .skills .skill div:hover {
+.container-about .skills .skill div:hover {
   transform: scale(1.1);
 }
-.container-about .skills-another .skills .skill div svg {
+.container-about .skills .skill div svg {
   font-size: 3rem;
   color: #F0FFFF;
 }/*# sourceMappingURL=AboutMe.css.map */

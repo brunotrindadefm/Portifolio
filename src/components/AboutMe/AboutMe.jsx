@@ -49,23 +49,18 @@ const AboutMe = ({ lang }) => {
                 <p>{text3}</p>
                 <p>{text4}</p>
             </div>
-            <div className='skills-another'>
-                <div className='skills'>
-                    <h3>{skills}</h3>
-                    <div className='skill'>
-                        <div><FaHtml5 /></div>
-                        <div><FaCss3Alt /></div>
-                        <div><IoLogoJavascript /></div>
-                        <div><FaJava /></div>
-                        <div><FaBootstrap /></div>
-                        <div><FaGitAlt /></div>
-                        <div><FaGithubAlt /></div>
-                        <div><FaReact /></div>
-                        <div><FaSass /></div>
-                    </div>
-                </div>
-                <div className='another'>
-
+            <div className='skills'>
+                <h3>{skills}</h3>
+                <div className='skill'>
+                    <div><FaHtml5 /></div>
+                    <div><FaCss3Alt /></div>
+                    <div><IoLogoJavascript /></div>
+                    <div><FaJava /></div>
+                    <div><FaBootstrap /></div>
+                    <div><FaGitAlt /></div>
+                    <div><FaGithubAlt /></div>
+                    <div><FaReact /></div>
+                    <div><FaSass /></div>
                 </div>
             </div>
         </div>

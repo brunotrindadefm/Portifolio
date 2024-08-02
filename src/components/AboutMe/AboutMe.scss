@@ -12,6 +12,7 @@
         text-align: center;
         font-size: 3rem;
         font-weight: bold;
+
         @media(max-width: 250px) {
             font-size: 2rem;
         }
@@ -22,12 +23,15 @@
         margin: 0 1rem;
         letter-spacing: 0.1rem;
         margin-bottom: 1rem;
+
         @media(max-width: 320px) {
             font-size: 1rem;
         }
+
         @media(max-width: 250px) {
             font-size: .8rem;
         }
+
         @media(max-width: 210px) {
             font-size: .6rem;
         }
@@ -38,55 +42,46 @@
         font-size: 2rem;
         font-weight: 500;
         margin: 1rem 0;
+
         @media(max-width: 320px) {
             font-size: 1.5rem;
         }
+
         @media(max-width: 250px) {
             font-size: 1.2rem;
         }
+
         @media(max-width: 210px) {
             font-size: .8rem;
         }
     }
 
-    .skills-another {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    .skills {
+        @include dCenter;
+        flex-direction: column;
         width: 100%;
         margin-bottom: 1rem;
 
-        .another {
-            
-        }
-
-        .skills {
+        .skill {
             @include dCenter;
-            flex-direction: column;
-            width: 40%;
-            margin-left: 1rem;
-            
-            .skill {
+            gap: .4rem;
+            flex-wrap: wrap;
+
+            div {
                 @include dCenter;
-                gap: .4rem;
-                flex-wrap: wrap;
+                width: 5rem;
+                height: 5rem;
+                background-color: $dimmgrey;
+                border-radius: $radius;
+                transition: 0.1s ease;
 
-                div {
-                    @include dCenter;
-                    width: 5rem;
-                    height: 5rem;
-                    background-color: $dimmgrey;
-                    border-radius: $radius;
-                    transition: 0.1s ease;
+                &:hover {
+                    transform: scale(1.1);
+                }
 
-                    &:hover {
-                        transform: scale(1.1);
-                    }
-
-                    svg {
-                        font-size: 3rem;
-                        color: $azure;
-                    }
+                svg {
+                    font-size: 3rem;
+                    color: $azure;
                 }
             }
         }
