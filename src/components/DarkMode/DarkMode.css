@@ -75,10 +75,6 @@ body.dark-mode {
   background-color: #DEB887;
   color: #F0FFFF;
 }
-.hello.dark-mode .btn:hover {
-  background-color: #FFD700;
-  color: #000;
-}
 
 .footer.dark-mode {
   border-top: solid 2px #000;

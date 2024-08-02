@@ -1,7 +1,10 @@
 import { useState } from 'react';
 
+import '../components/AboutMe/AboutMe.css'
+
 import NavBar from '../components/NavBar/NavBar'
 import Footer from '../components/Footer/Footer'
+import AboutMe from '../components/AboutMe/AboutMe';
 
 const About = () => {
 
@@ -15,6 +18,7 @@ const About = () => {
     <>
       <NavBar appOnLangChange={handleLangChange} />
       <div className='app'>
+        <AboutMe lang={lang} />
       </div>
       <Footer />
     </>

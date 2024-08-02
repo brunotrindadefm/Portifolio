@@ -5,6 +5,12 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
 }
+*::-moz-selection {
+  color: blue;
+}
+*::selection {
+  color: blue;
+}
 
 body,
 html {
@@ -28,8 +34,7 @@ html {
   align-items: center;
   padding: 1rem;
 }
-
-.portifolio {
+.app .portifolio {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,14 +43,14 @@ html {
   height: 100%;
 }
 @media (max-width: 1210px) {
-  .portifolio {
+  .app .portifolio {
     flex-direction: column;
     gap: 3rem;
     width: 90%;
   }
 }
 @media (max-width: 768px) {
-  .portifolio {
+  .app .portifolio {
     gap: 1.5rem;
     width: 95%;
   }

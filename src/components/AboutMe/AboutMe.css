@@ -1,0 +1,101 @@
+.container-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #F0FFFF;
+  width: 80%;
+  border-radius: 10px;
+  border: 2px solid #F0FFFF;
+}
+.container-about h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+@media (max-width: 250px) {
+  .container-about h2 {
+    font-size: 2rem;
+  }
+}
+.container-about p {
+  font-size: 1.3rem;
+  margin: 0 1rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 320px) {
+  .container-about p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 250px) {
+  .container-about p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 210px) {
+  .container-about p {
+    font-size: 0.6rem;
+  }
+}
+.container-about h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+@media (max-width: 320px) {
+  .container-about h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 250px) {
+  .container-about h3 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 210px) {
+  .container-about h3 {
+    font-size: 0.8rem;
+  }
+}
+.container-about .skills-another {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.container-about .skills-another .skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 1rem;
+}
+.container-about .skills-another .skills .skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+.container-about .skills-another .skills .skill div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background-color: #696969;
+  border-radius: 10px;
+  transition: 0.1s ease;
+}
+.container-about .skills-another .skills .skill div:hover {
+  transform: scale(1.1);
+}
+.container-about .skills-another .skills .skill div svg {
+  font-size: 3rem;
+  color: #F0FFFF;
+}/*# sourceMappingURL=AboutMe.css.map */

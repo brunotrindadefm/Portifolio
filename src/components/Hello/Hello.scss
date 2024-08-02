@@ -57,14 +57,14 @@
             @include dCenter;
             background-color: $gold;
             color: $black;
-            padding: .9rem 1.5rem;
+            padding: .9rem 1.3rem;
             border: none;
             cursor: pointer;
-            border-radius: $radius;
+            border-radius: 20px;
             transition: $seg;
 
             &:hover {
-                background-color: $azure;
+                padding: .9rem 2rem;
             }
         }
     }

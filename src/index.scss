@@ -2,12 +2,17 @@ $base-padding: 1rem;
 $gap-large: 3rem;
 $gap-medium: 1.5rem;
 
+@import './components/Variables.scss';
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
+  &::selection {
+    color: blue;
+  }
 }
 
 body,
@@ -27,28 +32,26 @@ html {
 
 .app {
   flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include dCenter;
   padding: $base-padding;
-}
 
-.portifolio {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  max-width: 1500px;
-  height: 100%;
+  .portifolio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1500px;
+    height: 100%;
 
-  @media(max-width: 1210px) {
-    flex-direction: column;
-    gap: $gap-large;
-    width: 90%;
-  }
+    @media(max-width: 1210px) {
+      flex-direction: column;
+      gap: $gap-large;
+      width: 90%;
+    }
 
-  @media(max-width: 768px) {
-    gap: $gap-medium;
-    width: 95%;
+    @media(max-width: 768px) {
+      gap: $gap-medium;
+      width: 95%;
+    }
   }
 }
