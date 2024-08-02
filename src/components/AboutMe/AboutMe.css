@@ -7,6 +7,7 @@
   width: 80%;
   border-radius: 10px;
   border: 2px solid #F0FFFF;
+  transition: 0.5s;
 }
 .container-about h2 {
   text-align: center;
@@ -81,14 +82,16 @@
   align-items: center;
   width: 5rem;
   height: 5rem;
-  background-color: #696969;
+  background-color: #17153B;
   border-radius: 10px;
   transition: 0.1s ease;
+  transition: 0.5s;
 }
 .container-about .skills .skill div:hover {
   transform: scale(1.1);
 }
 .container-about .skills .skill div svg {
+  transition: 0.5s;
   font-size: 3rem;
   color: #F0FFFF;
 }/*# sourceMappingURL=AboutMe.css.map */

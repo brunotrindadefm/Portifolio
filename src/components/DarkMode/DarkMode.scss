@@ -175,3 +175,18 @@ body.dark-mode {
         }
     }
 }
+
+.container-about.dark-mode {
+    border: 2px solid $black;
+    color: $black;
+    .skills {
+        .skill {
+            div {
+                background-color: $creme;
+                svg {
+                    color: $black;
+                }
+            }
+        }
+    }
+}

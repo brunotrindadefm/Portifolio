@@ -123,4 +123,15 @@ body.dark-mode {
 }
 .projects-container.dark-mode .card-projects div .btn a .btn-project:hover {
   color: #F0FFFF;
+}
+
+.container-about.dark-mode {
+  border: 2px solid #000;
+  color: #000;
+}
+.container-about.dark-mode .skills .skill div {
+  background-color: #fffdd0;
+}
+.container-about.dark-mode .skills .skill div svg {
+  color: #000;
 }/*# sourceMappingURL=DarkMode.css.map */
