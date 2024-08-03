@@ -19,6 +19,11 @@
     font-size: 2rem;
   }
 }
+@media (max-width: 181px) {
+  .container-about h2 {
+    font-size: 1.5rem;
+  }
+}
 .container-about p {
   font-size: 1.3rem;
   margin: 0 1rem;
