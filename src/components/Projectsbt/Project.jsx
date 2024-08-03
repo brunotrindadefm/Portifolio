@@ -13,17 +13,6 @@ const Project = ({ lang }) => {
 
     const projects = [
         {
-            name: 'Portifólio',
-            image: '/portifolio.png',
-            technologies: [<FaReact key='react' />, <FaSass key='sass' />],
-            description: {
-                en: 'My portfolio, where I talk about myself and my projects',
-                pt: 'Meu portifólio, onde falo sobre mim e sobre meus projetos'
-            },
-            deploy: 'https://brunotrindadefriaca.netlify.app/',
-            github: 'https://github.com/brunotrindadefm/portif-lio'
-        },
-        {
             name: 'API Movies',
             image: '/apiMovies.png',
             technologies: [<FaReact key="react" />, <FaSass key='sass' />],
@@ -46,6 +35,17 @@ const Project = ({ lang }) => {
             github: 'https://github.com/brunotrindadefm/WeatherAPI'
         },
         {
+            name: 'API Cep',
+            image: '/apiCep.png',
+            technologies: [<FaReact key="react" />, <FaSass key="sass" />],
+            description: {
+                en: 'A project for fetching and displaying Brazilian postal codes.',
+                pt: 'Um projeto para buscar e exibir CEP.'
+            },
+            deploy: 'https://btcep.netlify.app/',
+            github: 'https://github.com/brunotrindadefm/BuscadorCEP'
+        },
+        {
             name: 'API Spotify',
             image: '/apiSpotify.png',
             technologies: [<FaReact key="react" />, <FaCss3Alt key="css" />],
@@ -66,17 +66,6 @@ const Project = ({ lang }) => {
             },
             deploy: 'https://bttictactoe.netlify.app/',
             github: 'https://github.com/brunotrindadefm/TicTacToe'
-        },
-        {
-            name: 'API Cep',
-            image: '/apiCep.png',
-            technologies: [<FaReact key="react" />, <FaCss3Alt key="css" />],
-            description: {
-                en: 'A project for fetching and displaying Brazilian postal codes.',
-                pt: 'Um projeto para buscar e exibir CEP.'
-            },
-            deploy: 'https://btcep.netlify.app/',
-            github: 'https://github.com/brunotrindadefm/BuscadorCEP'
         },
         {
             name: 'Calculadora',
