@@ -75,7 +75,7 @@
                 @include dCenter;
                 width: 5rem;
                 height: 5rem;
-                background-color: $bluedark;
+                background: linear-gradient(135deg, #003366, #000033);
                 border-radius: $radius;
                 transition: 0.1s ease;
                 transition: $seg;

@@ -43,23 +43,28 @@
 }
 
 body.dark-mode {
-  background: #121212;
+  background: linear-gradient(135deg, #002a4d, #001f3f);
+  transition: 0.5s;
+}
+
+.app.dark-mode {
+  background: linear-gradient(135deg, #a2c2e3, #f4f4f9);
   transition: 0.5s;
 }
 
 .grid.dark-mode div {
-  border: 2px solid #FFD700;
+  border: 2px solid #a2c2e3;
   color: #000;
 }
 .grid.dark-mode div:hover svg {
-  color: #FFD700;
+  color: #F0FFFF;
 }
 
 .nav.dark-mode {
   border-bottom: solid 2px #000;
 }
 .nav.dark-mode h2 a {
-  color: #FFD700;
+  color: #000;
 }
 
 .hello.dark-mode h1 {
@@ -78,9 +83,10 @@ body.dark-mode {
 
 .footer.dark-mode {
   border-top: solid 2px #000;
+  background: linear-gradient(135deg, #a2c2e3, #f4f4f9);
 }
 .footer.dark-mode .social a {
-  color: #FFD700;
+  color: #000;
 }
 .footer.dark-mode .social .github:hover {
   color: #ff6868;
@@ -90,25 +96,25 @@ body.dark-mode {
 }
 
 .projects-container.dark-mode .projects-tit h2 {
-  color: #FFD700;
+  color: #000;
 }
 .projects-container.dark-mode .projects-tit div {
-  background-color: #FFD700;
+  background-color: #000;
 }
 .projects-container.dark-mode .card-projects div {
-  background-color: #FFE4C4;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
 }
 .projects-container.dark-mode .card-projects div p {
   color: #000;
 }
 .projects-container.dark-mode .card-projects div h3 {
-  color: #F0FFFF;
+  color: #000;
 }
 .projects-container.dark-mode .card-projects div .icons span {
-  color: #F0FFFF;
+  color: #000;
 }
 .projects-container.dark-mode .card-projects div .icons span:hover {
-  color: #696969;
+  color: #F0FFFF;
 }
 .projects-container.dark-mode .card-projects div .btn a {
   border: 2px solid transparent;
@@ -117,12 +123,12 @@ body.dark-mode {
   border: 2px solid #F0FFFF;
 }
 .projects-container.dark-mode .card-projects div .btn a .btn-project {
-  background-color: #fffdd0;
+  background: linear-gradient(190deg, #a2c2e3, #f4f4f9);
   color: #000;
   border: none;
 }
 .projects-container.dark-mode .card-projects div .btn a .btn-project:hover {
-  color: #F0FFFF;
+  color: #002a4d;
 }
 
 .container-about.dark-mode {
@@ -130,7 +136,7 @@ body.dark-mode {
   color: #000;
 }
 .container-about.dark-mode .skills .skill div {
-  background-color: #fffdd0;
+  background: linear-gradient(135deg, #a2c2e3, #f4f4f9);
 }
 .container-about.dark-mode .skills .skill div svg {
   color: #000;

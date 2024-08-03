@@ -10,6 +10,7 @@ $gap-medium: 1.5rem;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
+
   &::selection {
     color: blue;
   }
@@ -20,6 +21,8 @@ html {
   height: 100%;
   display: flex;
   flex-direction: column;
+  transition: background 0.5s;
+  background: linear-gradient(135deg, #a2c2e3, #f4f4f9);
   scrollbar-color: rgb(0, 0, 94) #222;
   transition: 0.5s;
 }
@@ -34,6 +37,9 @@ html {
   flex: 1;
   @include dCenter;
   padding: $base-padding;
+  background: linear-gradient(135deg, #002a4d, #001f3f);
+
+  transition: background 0.4s;
 
   .portifolio {
     display: flex;

@@ -3,11 +3,12 @@
 .footer {
     @include dCenter;
     width: 100%;
-    background: $transparent;
+    background: linear-gradient(135deg, #002a4d, #001f3f);
     color: $azure;
     gap: 2rem;
     padding: 1rem 0;
     border-top: 2px solid;
+    transition: background 0.4s;
 
     .social {
         @include dCenter;

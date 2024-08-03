@@ -51,18 +51,23 @@
 
 
 body.dark-mode {
-    background: #121212;
-    transition: 0.5s;
+    background: linear-gradient(135deg, #002a4d, #001f3f);
+    transition: $seg;
+}
+
+.app.dark-mode {
+    background: linear-gradient(135deg, #a2c2e3, #f4f4f9);
+    transition: $seg;
 }
 
 .grid.dark-mode {
     div {
-        border: 2px solid $yellow;
+        border: 2px solid #a2c2e3;
         color: $black;
 
         &:hover {
             svg {
-                color: $yellow;
+                color: $azure;
             }
         }
     }
@@ -71,8 +76,7 @@ body.dark-mode {
 .nav.dark-mode {
     h2 {
         a {
-
-            color: $yellow;
+            color: $black;
         }
     }
 
@@ -102,11 +106,12 @@ body.dark-mode {
 
 .footer.dark-mode {
     border-top: solid 2px $black;
+    background: linear-gradient(135deg, #a2c2e3, #f4f4f9);
 
     .social {
 
         a {
-            color: $yellow;
+            color: $black;
         }
 
         .github:hover {
@@ -123,32 +128,32 @@ body.dark-mode {
 
     .projects-tit {
         h2 {
-            color: $yellow;
+            color: $black;
         }
 
         div {
-            background-color: $yellow;
+            background-color: $black;
         }
     }
 
     .card-projects {
         div {
-            background-color: $gold;
+            background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
 
             p {
                 color: $black;
             }
 
             h3 {
-                color: $azure;
+                color: $black;
             }
 
             .icons {
                 span {
-                    color: $azure;
+                    color: $black;
 
                     &:hover {
-                        color: $dimmgrey;
+                        color: $azure;
                     }
                 }
             }
@@ -162,12 +167,12 @@ body.dark-mode {
                     }
 
                     .btn-project {
-                        background-color: $creme;
+                        background: linear-gradient(190deg, #a2c2e3, #f4f4f9);
                         color: $black;
                         border: none;
 
                         &:hover {
-                            color: $azure;
+                            color: #002a4d;
                         }
                     }
                 }
@@ -182,7 +187,7 @@ body.dark-mode {
     .skills {
         .skill {
             div {
-                background-color: $creme;
+                background: linear-gradient(135deg, #a2c2e3, #f4f4f9);
                 svg {
                     color: $black;
                 }

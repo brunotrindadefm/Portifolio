@@ -16,8 +16,8 @@
 }
 .projects-container .projects-tit div {
   width: 80%;
-  height: 3px;
-  background-color: rgb(63, 63, 255);
+  height: 0.2rem;
+  background-color: #F0FFFF;
   transition: 0.5s;
 }
 .projects-container .projects-tit h2 {
@@ -41,9 +41,14 @@
   padding: 2rem;
   border-radius: 10px;
 }
+@media (max-width: 251px) {
+  .projects-container .card-projects {
+    padding: 0;
+  }
+}
 .projects-container .card-projects div {
   max-width: 400px;
-  background-color: #17153B;
+  background: linear-gradient(135deg, #003366, #000033);
   padding: 1rem;
   border-radius: 10px;
   overflow: hidden;
@@ -58,6 +63,12 @@
   color: #fffdd0;
   margin: -0.5rem 0 -1.5rem;
   flex-wrap: wrap;
+  background: transparent;
+}
+@media (max-width: 250px) {
+  .projects-container .card-projects div .icons {
+    font-size: 1.5rem;
+  }
 }
 .projects-container .card-projects div .icons span {
   transition: 0.5s;
@@ -81,47 +92,69 @@
   font-weight: bold;
   font-size: 1.5rem;
 }
+@media (max-width: 250px) {
+  .projects-container .card-projects div h3 {
+    font-size: 1rem;
+  }
+}
 .projects-container .card-projects div .btn {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.5rem;
+  background: transparent;
 }
 .projects-container .card-projects div .btn a {
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 47%;
   transition: 0.5s;
   border: 2px solid transparent;
   border-radius: 10px;
 }
+@media (max-width: 451px) {
+  .projects-container .card-projects div .btn a {
+    width: 100%;
+  }
+}
 .projects-container .card-projects div .btn a:hover {
-  border: 2px solid #DEB887;
+  border: 2px solid #fffdd0;
+  width: 50%;
+}
+@media (max-width: 451px) {
+  .projects-container .card-projects div .btn a:hover {
+    width: 100%;
+  }
 }
 .projects-container .card-projects div .btn a .btn-project {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  padding: 0.4rem 0;
+  padding: 0.5rem 0;
   width: 100%;
+  font-weight: 500;
   border-radius: 10px;
   cursor: pointer;
   border: none;
-  background-color: #DEB887;
-  font-weight: bold;
-  color: #17153B;
+  background: linear-gradient(135deg, #003366, #002a44);
+  color: #F0FFFF;
   transition: 0.5s;
 }
 .projects-container .card-projects div .btn a .btn-project:hover {
   background-color: transparent;
-  color: #DEB887;
+  color: #fffdd0;
 }
 @media (max-width: 330px) {
   .projects-container .card-projects div .btn a .btn-project {
     font-size: 1rem;
+  }
+}
+@media (max-width: 251px) {
+  .projects-container .card-projects div .btn a .btn-project {
+    padding: 0.2rem 0;
   }
 }
 .projects-container .card-projects div .btn .readMore {
@@ -143,6 +176,11 @@
 @media (max-width: 400px) {
   .projects-container .card-projects div .btn .readMore {
     width: 100%;
+  }
+}
+@media (max-width: 251px) {
+  .projects-container .card-projects div .btn .readMore {
+    padding: 0;
   }
 }
 .projects-container .card-projects div .btn .readMore .arrowdown,
@@ -170,7 +208,7 @@
   opacity: 0;
   max-height: 0;
   overflow: hidden;
-  transition: opacity 0.4s ease, max-height 0.4s, margin-top 0.4s ease;
+  transition: opacity 0.4s ease, max-height 0.4s ease, margin-top 0.4s ease;
 }
 .projects-container .card-projects div p.visible {
   opacity: 1;
