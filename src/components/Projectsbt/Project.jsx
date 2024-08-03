@@ -26,7 +26,7 @@ const Project = ({ lang }) => {
         {
             name: 'API Clima',
             image: '/apiClima.png',
-            technologies: [<FaReact key="react" />, <FaCss3Alt key="css" />],
+            technologies: [<FaReact key="react" />, <FaSass key="sass" />],
             description: {
                 en: 'A weather application using a weather API.',
                 pt: 'Um aplicativo de clima usando uma API de clima.'
