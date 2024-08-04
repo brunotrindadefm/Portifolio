@@ -9,6 +9,10 @@
     border: 2px solid $azure;
     transition: $seg;
 
+    @media(max-width: 1000px) {
+        width: 95%;
+    }
+
     h2 {
         text-align: center;
         font-size: 3rem;
@@ -54,10 +58,6 @@
         @media(max-width: 250px) {
             font-size: 1.2rem;
         }
-
-        @media(max-width: 210px) {
-            font-size: .8rem;
-        }
     }
 
     .skills {
@@ -69,6 +69,7 @@
         .skill {
             @include dCenter;
             gap: .4rem;
+            width: 90%;
             flex-wrap: wrap;
 
             div {
@@ -80,6 +81,15 @@
                 transition: 0.1s ease;
                 transition: $seg;
 
+                @media(max-width: 600px) {
+                    width: 4rem;
+                    height: 4rem;
+                }
+                @media(max-width: 320px) {
+                    width: 3.5rem;
+                    height: 3.5rem;
+                }
+
                 &:hover {
                     transform: scale(1.1);
                 }
@@ -88,6 +98,12 @@
                     transition: $seg;
                     font-size: 3rem;
                     color: $azure;
+                    @media(max-width: 600px) { 
+                        font-size: 2.3rem;
+                    }
+                    @media(max-width: 320px) {
+                        font-size: 1.8rem;
+                    }
                 }
             }
         }

@@ -9,6 +9,11 @@
   border: 2px solid #F0FFFF;
   transition: 0.5s;
 }
+@media (max-width: 1000px) {
+  .container-about {
+    width: 95%;
+  }
+}
 .container-about h2 {
   text-align: center;
   font-size: 3rem;
@@ -61,11 +66,6 @@
     font-size: 1.2rem;
   }
 }
-@media (max-width: 210px) {
-  .container-about h3 {
-    font-size: 0.8rem;
-  }
-}
 .container-about .skills {
   display: flex;
   justify-content: center;
@@ -79,6 +79,7 @@
   justify-content: center;
   align-items: center;
   gap: 0.4rem;
+  width: 90%;
   flex-wrap: wrap;
 }
 .container-about .skills .skill div {
@@ -92,6 +93,18 @@
   transition: 0.1s ease;
   transition: 0.5s;
 }
+@media (max-width: 600px) {
+  .container-about .skills .skill div {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+@media (max-width: 320px) {
+  .container-about .skills .skill div {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
 .container-about .skills .skill div:hover {
   transform: scale(1.1);
 }
@@ -99,4 +112,14 @@
   transition: 0.5s;
   font-size: 3rem;
   color: #F0FFFF;
+}
+@media (max-width: 600px) {
+  .container-about .skills .skill div svg {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 320px) {
+  .container-about .skills .skill div svg {
+    font-size: 1.8rem;
+  }
 }/*# sourceMappingURL=AboutMe.css.map */
