@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './Contact.css'
+import './Contact.scss'
 import { IoCloseSharp } from "react-icons/io5";
 
 import btPhoto from '/BrunoTrindade.png'

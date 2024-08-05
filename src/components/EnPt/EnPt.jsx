@@ -1,4 +1,4 @@
-import './EnPt.css'
+import './EnPt.scss'
 
 import { useState } from 'react'
 

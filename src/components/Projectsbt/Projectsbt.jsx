@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import Project from './Project'
-import './Projects.css'
+import './Projects.scss'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';

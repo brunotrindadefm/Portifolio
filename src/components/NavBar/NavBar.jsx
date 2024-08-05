@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import DarkMode from '../DarkMode/DarkMode'
 import EnPt from '../EnPt/EnPt'
-import './NavBar.css'
+import './NavBar.scss'
 
 import { useState } from 'react'
 

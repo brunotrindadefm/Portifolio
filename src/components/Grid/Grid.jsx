@@ -1,4 +1,4 @@
-import './Grid.css'
+import './Grid.scss'
 
 import { SiAboutdotme } from "react-icons/si";
 import { MdFolderSpecial } from "react-icons/md";

@@ -1,4 +1,4 @@
-import './Footer.css'
+import './Footer.scss'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';

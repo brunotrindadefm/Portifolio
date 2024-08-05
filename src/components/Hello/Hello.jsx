@@ -1,4 +1,4 @@
-import './Hello.css'
+import './Hello.scss'
 
 import { useState, useEffect } from 'react';
 

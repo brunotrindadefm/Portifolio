@@ -1,4 +1,4 @@
-import './AboutMe.css';
+import './AboutMe.scss';
 
 import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaSass, FaJava, FaGitAlt, FaGithubAlt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";

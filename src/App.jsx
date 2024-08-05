@@ -2,7 +2,7 @@ import Footer from './components/Footer/Footer'
 import Hello from './components/Hello/Hello'
 import NavBar from './components/NavBar/NavBar'
 import Grid from './components/Grid/Grid'
-import './index.css'
+import './index.scss'
 import { useState } from 'react'
 import Contact from './components/Contact/Contact'
 

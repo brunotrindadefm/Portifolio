@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import '../components/AboutMe/AboutMe.css'
+import '../components/AboutMe/AboutMe.scss'
 
 import NavBar from '../components/NavBar/NavBar'
 import Footer from '../components/Footer/Footer'

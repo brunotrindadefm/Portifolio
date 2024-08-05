@@ -13,6 +13,17 @@ const Project = ({ lang }) => {
 
     const projects = [
         {
+            name: 'Pokedex',
+            image: '/pokedex.png',
+            technologies: [<FaReact key="react" />, <FaSass key='sass' />],
+            description: {
+                en: 'A pokedex fetching using a public API.',
+                pt: 'Uma pokedex usando uma API pública.'
+            },
+            deploy: 'https://btpokedex.netlify.app',
+            github: 'https://github.com/brunotrindadefm/Pokedex'
+        },
+        {
             name: 'API Movies',
             image: '/apiMovies.png',
             technologies: [<FaReact key="react" />, <FaSass key='sass' />],

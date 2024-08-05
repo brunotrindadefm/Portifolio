@@ -3,7 +3,7 @@ import Footer from '../components/Footer/Footer'
 
 import { useState } from 'react'
 
-import '../index.css'
+import '../index.scss'
 import Projectsbt from '../components/Projectsbt/Projectsbt'
 
 const Projects = () => {
