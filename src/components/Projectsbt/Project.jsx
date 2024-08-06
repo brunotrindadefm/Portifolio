@@ -17,8 +17,8 @@ const Project = ({ lang }) => {
             image: '/pokedex.png',
             technologies: [<FaReact key="react" />, <FaSass key='sass' />],
             description: {
-                en: 'A pokedex fetching using a public API.',
-                pt: 'Uma pokedex usando uma API pública.'
+                en: 'A pokedex fetching using PokeAPI.',
+                pt: 'Uma pokedex usando PokeAPI.'
             },
             deploy: 'https://btpokedex.netlify.app',
             github: 'https://github.com/brunotrindadefm/Pokedex'
@@ -134,7 +134,7 @@ const Project = ({ lang }) => {
                         ))}
                     </div>
                     <div className="btn" data-aos="fade-up" data-aos-duration="900" >
-                        <a href={project.deploy} target="_blank"><button className="btn-project">Deploy</button></a>
+                        <a href={project.deploy} target="_blank"><button className="btn-project">View</button></a>
                         <a href={project.github} target="_blank"><button className="btn-project">{lang ? 'Repositótrio' : 'Repository'}</button></a>
                         <button className='readMore' onClick={() => handleInfoClick(index)} aria-label={`More info about project ${index + 1}`}>
                             {lang ? 'Ler Mais' : 'Read More'}
