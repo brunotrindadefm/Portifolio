@@ -61,7 +61,7 @@
                 margin: -0.5rem 0 -1.5rem;
                 flex-wrap: wrap;
                 background: $transparent;
-                @media(max-width: 250px) {
+                @media(max-width: 310px) {
                     font-size: 1.5rem;
                 }
 
@@ -91,7 +91,7 @@
                 text-align: center;
                 font-weight: bold;
                 font-size: 1.5rem;
-                @media(max-width: 250px) {
+                @media(max-width: 310px) {
                     font-size: 1rem;
                 }
             }
@@ -144,7 +144,7 @@
                         @media (max-width: 330px) {
                             font-size: 1rem;
                         }
-                        @media (max-width: 251px) {
+                        @media (max-width: 310px) {
                             padding: 0.2rem 0;
                         }
 
@@ -168,7 +168,7 @@
                     @media(max-width: 400px) {
                         width: 100%;
                     }
-                    @media (max-width: 251px) {
+                    @media (max-width: 320px) {
                         padding: 0;
                     }
 
@@ -203,12 +203,18 @@
                 max-height: 0;
                 overflow: hidden;
                 transition: opacity 0.4s ease, max-height 0.4s ease , margin-top 0.4s ease;
-            }
+                @media(max-width: 320px) {
+                    font-size: 1rem;
+                }
+             }
 
             p.visible {
                 opacity: 1;
                 max-height: 160px;
                 margin-top: 1rem;
+                @media(max-width: 500px) {
+                    max-height: 400px;
+                }
             }
             
         }
