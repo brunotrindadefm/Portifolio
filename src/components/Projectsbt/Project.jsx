@@ -46,6 +46,17 @@ const Project = ({ lang }) => {
             github: 'https://github.com/brunotrindadefm/WeatherAPI'
         },
         {
+            name: 'Cryptocurrencies',
+            image: '/crypto.png',
+            technologies: [<FaReact key="react" />, <FaSass key='sass' />],
+            description: {
+                en: 'Site with price and appreciation information, filtering 1000 cryptocurrencies by decreasing price.',
+                pt: 'Site com informação do preço e valorização, filtrando por preço decrescente 1000 criptomoedas.'
+            },
+            deploy: 'https://btcryptocoin.netlify.app/',
+            github: 'https://github.com/brunotrindadefm/Cryptocurrencies'
+        },
+        {
             name: 'API Cep',
             image: '/apiCep.png',
             technologies: [<FaReact key="react" />, <FaSass key="sass" />],
