@@ -20,7 +20,7 @@ const Project = ({ lang }) => {
                 en: 'A pokedex fetching using PokeAPI.',
                 pt: 'Uma pokedex usando PokeAPI.'
             },
-            deploy: 'https://btpokedex.netlify.app',
+            deploy: 'https://pokedexbt.netlify.app',
             github: 'https://github.com/brunotrindadefm/Pokedex'
         },
         {
