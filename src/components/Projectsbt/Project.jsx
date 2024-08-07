@@ -110,17 +110,6 @@ const Project = ({ lang }) => {
             },
             deploy: 'https://btaim.netlify.app/',
             github: 'https://github.com/brunotrindadefm/TreinamentoDeMira'
-        },
-        {
-            name: 'Calculadora de IMC',
-            image: '/calculadoradeImc.png',
-            technologies: [<FaHtml5 key="html" />, <FaCss3Alt key="css" />, <IoLogoJavascript key='js' />, <FaBootstrap key='bootstrap' />],
-            description: {
-                en: 'A BMI calculator project.',
-                pt: 'Um projeto de calculadora de IMC.'
-            },
-            deploy: 'https://btimc.netlify.app/',
-            github: 'https://github.com/brunotrindadefm/CalculadoraIMC'
         }
     ];
 
@@ -144,7 +133,7 @@ const Project = ({ lang }) => {
                             <span key={i}>{Icon}</span>
                         ))}
                     </div>
-                    <div className="btn" data-aos="fade-up" data-aos-duration="900" >
+                    <div className="btn" data-aos="fade-up" >
                         <a href={project.deploy} target="_blank"><button className="btn-project">View</button></a>
                         <a href={project.github} target="_blank"><button className="btn-project">{lang ? 'Repositótrio' : 'Repository'}</button></a>
                         <button className='readMore' onClick={() => handleInfoClick(index)} aria-label={`More info about project ${index + 1}`}>
