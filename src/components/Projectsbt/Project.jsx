@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaSass } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaSass, FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 
 import { useEffect, useState } from "react";
@@ -12,6 +12,16 @@ const Project = ({ lang }) => {
     const [arrowUp, setArrowUp] = useState(false)
 
     const projects = [
+        {
+            name: 'CRUD',
+            image: '/crud.png',
+            technologies: [<FaReact key="react" />, <FaSass key='sass' />,  <FaNodeJs key='node.js'/> ],
+            description: {
+                en: 'Create, read, update and delete. Backend made with node.js + express and frontend made with react.',
+                pt: 'Create, read, update and delete. Backend feito com node.js + express e frontend feito com react.'
+            },
+            github: 'https://github.com/brunotrindadefm/CRUD'
+        },
         {
             name: 'Pokedex',
             image: '/pokedex.png',
@@ -46,7 +56,7 @@ const Project = ({ lang }) => {
             github: 'https://github.com/brunotrindadefm/WeatherAPI'
         },
         {
-            name: 'Cryptocurrencies',
+            name: 'Crypto',
             image: '/crypto.png',
             technologies: [<FaReact key="react" />, <FaSass key='sass' />],
             description: {
@@ -134,7 +144,7 @@ const Project = ({ lang }) => {
                         ))}
                     </div>
                     <div className="btn" data-aos="fade-up" >
-                        <a href={project.deploy} target="_blank"><button className="btn-project">View</button></a>
+                        {project.deploy && <a href={project.deploy} target="_blank"><button className="btn-project">View</button></a>}
                         <a href={project.github} target="_blank"><button className="btn-project">{lang ? 'Repositótrio' : 'Repository'}</button></a>
                         <button className='readMore' onClick={() => handleInfoClick(index)} aria-label={`More info about project ${index + 1}`}>
                             <span className="text">{lang ? 'Ler Mais' : 'Read More'}</span>
