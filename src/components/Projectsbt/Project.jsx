@@ -1,5 +1,6 @@
 import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaSass, FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
+import { SiMysql } from "react-icons/si";
 
 import { useEffect, useState } from "react";
 
@@ -13,7 +14,17 @@ const Project = ({ lang }) => {
 
     const projects = [
         {
-            name: 'CRUD',
+            name: 'Gerenciador de Custos',
+            image: '/crud-mysql.png',
+            technologies: [<FaReact key="react" />, <FaSass key='sass' />,  <FaNodeJs key='node.js'/>, <SiMysql key='mysql'/>  ],
+            description: {
+                en: 'Crud project made with react, node + express and mysql database',
+                pt: 'Projeto crud feito com react, node + express e banco de dados mysql'
+            },
+            github: 'https://github.com/brunotrindadefm/CRUD-MYSQL'
+        },
+        {
+            name: 'Cadastro de Usuários',
             image: '/crud.png',
             technologies: [<FaReact key="react" />, <FaSass key='sass' />,  <FaNodeJs key='node.js'/> ],
             description: {
