@@ -13,7 +13,6 @@ const AboutMe = ({ lang }) => {
     const [text2, setText2] = useState('')
     const [text3, setText3] = useState('')
     const [text4, setText4] = useState('')
-    const [text5, setText5] = useState('')
 
     const [title, setTitle] = useState('')
     const [subtitle, setSubtitle] = useState('')
