@@ -14,6 +14,16 @@ const Project = ({ lang }) => {
 
     const projects = [
         {
+            name: 'Cadastro de Usuários',
+            image: '/crud.png',
+            technologies: [<FaReact key="react" />, <FaSass key='sass' />,  <FaNodeJs key='node.js'/>, <SiMysql key='mysql'/>  ],
+            description: {
+                en: 'Create, read, update and delete. Backend made with node.js + express  express and mysql database, frontend made with react.',
+                pt: 'Create, read, update and delete. Backend feito com node.js + express e banco de dados mysql, frontend feito com react.'
+            },
+            github: 'https://github.com/brunotrindadefm/CRUD'
+        },
+        {
             name: 'Gerenciador de Custos',
             image: '/crud-mysql.png',
             technologies: [<FaReact key="react" />, <FaSass key='sass' />,  <FaNodeJs key='node.js'/>, <SiMysql key='mysql'/>  ],
@@ -22,16 +32,6 @@ const Project = ({ lang }) => {
                 pt: 'Projeto crud feito com react, node + express e banco de dados mysql'
             },
             github: 'https://github.com/brunotrindadefm/CRUD-MYSQL'
-        },
-        {
-            name: 'Cadastro de Usuários',
-            image: '/crud.png',
-            technologies: [<FaReact key="react" />, <FaSass key='sass' />,  <FaNodeJs key='node.js'/> ],
-            description: {
-                en: 'Create, read, update and delete. Backend made with node.js + express and frontend made with react.',
-                pt: 'Create, read, update and delete. Backend feito com node.js + express e frontend feito com react.'
-            },
-            github: 'https://github.com/brunotrindadefm/CRUD'
         },
         {
             name: 'Pokedex',
