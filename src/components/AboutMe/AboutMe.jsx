@@ -1,7 +1,9 @@
 import './AboutMe.scss';
 
-import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaSass, FaJava, FaGitAlt, FaGithubAlt } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaSass, FaJava, FaGitAlt, FaGithubAlt, FaNodeJs, FaNode } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
+import { SiMysql } from "react-icons/si";
+import { TbSql } from "react-icons/tb";
 
 import { useState, useEffect } from 'react';
 
@@ -57,10 +59,13 @@ const AboutMe = ({ lang }) => {
                     <div><IoLogoJavascript /></div>
                     <div><FaJava /></div>
                     <div><FaBootstrap /></div>
+                    <div><FaSass /></div>
                     <div><FaGitAlt /></div>
                     <div><FaGithubAlt /></div>
                     <div><FaReact /></div>
-                    <div><FaSass /></div>
+                    <div><FaNodeJs /></div>
+                    <div><TbSql /></div>
+                    <div><SiMysql /></div>
                 </div>
             </div>
         </div>
