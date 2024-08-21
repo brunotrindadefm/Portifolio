@@ -38,8 +38,8 @@ const Project = ({ lang }) => {
             image: '/register-login.png',
             technologies: [<FaReact key="react" />, <FaSass key='sass' />,  <FaNodeJs key='node.js'/>, <SiMysql key='mysql'/>  ],
             description: {
-                en: 'A full-stack application designed for user authentication and registration management. Using React on the frontend and Node.js + express on the backend, with mysql database',
-                pt: 'Uma aplicação full-stack projetada para gerenciar autenticação e registro de usuários. Utilizando React no frontend e Node.js + express no backend, com mysql de banco de dados'
+                en: 'A full-stack application designed for user authentication and registration management.',
+                pt: 'Uma aplicação full-stack projetada para gerenciar autenticação e registro de usuários.'
             },
             github: 'https://github.com/brunotrindadefm/CadastroDeUsuarios'
         },
