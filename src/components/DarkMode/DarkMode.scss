@@ -74,6 +74,7 @@ body.dark-mode {
 }
 
 .nav.dark-mode {
+    border-bottom: 2px solid $black;
     h2 {
         a {
             color: $black;
