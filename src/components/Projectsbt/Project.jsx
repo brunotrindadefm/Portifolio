@@ -134,7 +134,7 @@ const Project = ({ lang }) => {
         {
             name: 'Treinamento Mira',
             image: '/TreinamentoAim.png',
-            technologies: [<FaHtml5 key="html" />, <FaCss3Alt key="css" />, <FaBootstrap key='bootstrap' />],
+            technologies: [<FaHtml5 key="html" />, <FaCss3Alt key="css" />, <FaBootstrap key='bootstrap' />, <IoLogoJavascript key='javascript'/> ],
             description: {
                 en: 'An aim training tool for gamers.',
                 pt: 'Uma ferramenta de treinamento de mira para jogadores.'
