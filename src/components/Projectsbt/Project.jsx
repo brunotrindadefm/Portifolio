@@ -41,7 +41,7 @@ const Project = ({ lang }) => {
                 en: 'A full-stack application designed for user authentication and registration management.',
                 pt: 'Uma aplicação full-stack projetada para gerenciar autenticação e registro de usuários.'
             },
-            github: 'https://github.com/brunotrindadefm/CadastroDeUsuarios'
+            github: 'https://github.com/brunotrindadefm/Register-Login'
         },
         {
             name: 'Pokedex',
