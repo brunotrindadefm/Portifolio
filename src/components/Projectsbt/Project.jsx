@@ -1,6 +1,6 @@
 import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaSass, FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiMysql } from "react-icons/si";
+import { SiMysql, SiTypescript } from "react-icons/si";
 
 import { useEffect, useState } from "react";
 
@@ -13,10 +13,20 @@ const Project = ({ lang }) => {
     const [arrowUp, setArrowUp] = useState(false)
 
     const projects = [
+         {
+            name: 'Estoque',
+            image: '/estoque.png',
+            technologies: [<FaReact key="react" />, <SiTypescript key='typescript'/> , <FaNodeJs key='node.js'/>, <SiMysql key='mysql'/>, <FaSass key='sass' />  ],
+            description: {
+                en: 'Product inventory design, crud. Saving name, description, price, quantity in stock and image. Made with Typescript, React, Node.js + Express and relational database (MySQL).',
+                pt: 'Projeto de estoque de produtos, crud. Salvando nome, descrição, preço, quantidade em estoque e imagem. Feito com Typescript, React, Node.js + Express e banco de dados relacionais (MySQL).'
+            },
+            github: 'https://github.com/brunotrindadefm/Estoque'
+        },
         {
             name: 'Cadastro de Usuários',
             image: '/crud.png',
-            technologies: [<FaReact key="react" />, <FaSass key='sass' />,  <FaNodeJs key='node.js'/>, <SiMysql key='mysql'/>  ],
+            technologies: [<FaReact key="react" />,  <FaNodeJs key='node.js'/>, <SiMysql key='mysql'/>, <FaSass key='sass' />  ],
             description: {
                 en: 'Create, read, update and delete. Backend made with node.js + express  express and mysql database, frontend made with react.',
                 pt: 'Create, read, update and delete. Backend feito com node.js + express e banco de dados mysql, frontend feito com react.'
@@ -26,7 +36,7 @@ const Project = ({ lang }) => {
         {
             name: 'Gerenciador de Custos',
             image: '/crud-mysql.png',
-            technologies: [<FaReact key="react" />, <FaSass key='sass' />,  <FaNodeJs key='node.js'/>, <SiMysql key='mysql'/>  ],
+            technologies: [<FaReact key="react" />,  <FaNodeJs key='node.js'/>, <SiMysql key='mysql'/>, <FaSass key='sass' />  ],
             description: {
                 en: 'Crud project made with react, node + express and mysql database',
                 pt: 'Projeto crud feito com react, node + express e banco de dados mysql'
