@@ -140,17 +140,6 @@ const Project = ({ lang }) => {
             },
             deploy: 'https://btcalculator.netlify.app/',
             github: 'https://github.com/brunotrindadefm/calculadora'
-        },
-        {
-            name: 'Treinamento Mira',
-            image: '/TreinamentoAim.png',
-            technologies: [<FaHtml5 key="html" />, <FaCss3Alt key="css" />, <FaBootstrap key='bootstrap' />, <IoLogoJavascript key='javascript'/> ],
-            description: {
-                en: 'An aim training tool for gamers.',
-                pt: 'Uma ferramenta de treinamento de mira para jogadores.'
-            },
-            deploy: 'https://btaim.netlify.app/',
-            github: 'https://github.com/brunotrindadefm/TreinamentoDeMira'
         }
     ];
 
