@@ -2,7 +2,7 @@ import './AboutMe.scss';
 
 import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaSass, FaJava, FaGitAlt, FaGithubAlt, FaNodeJs, FaNode } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiMysql } from "react-icons/si";
+import { SiMysql, SiTypescript } from "react-icons/si";
 import { TbSql } from "react-icons/tb";
 
 import { useState, useEffect } from 'react';
@@ -63,6 +63,7 @@ const AboutMe = ({ lang }) => {
                     <div><FaGithubAlt /></div>
                     <div><FaReact /></div>
                     <div><FaNodeJs /></div>
+                    <div><SiTypescript /></div>
                     <div><TbSql /></div>
                     <div><SiMysql /></div>
                 </div>

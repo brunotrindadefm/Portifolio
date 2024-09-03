@@ -10,10 +10,6 @@ $gap-medium: 1.5rem;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
-
-  &::selection {
-    color: blue;
-  }
 }
 
 body,
