@@ -25,13 +25,13 @@ const Project = ({ lang }) => {
         },
         {
             name: 'Cadastro de Usuários',
-            image: '/crud.png',
-            technologies: [<FaReact key="react" />,  <FaNodeJs key='node.js'/>, <SiMysql key='mysql'/>, <FaSass key='sass' />  ],
+            image: '/cadastrodeusuarios.png',
+            technologies: [<FaReact key="react" />,<SiTypescript key='typescript'/>,  <FaNodeJs key='node.js'/>, <SiMysql key='mysql'/>, <FaSass key='sass' />  ],
             description: {
-                en: 'Create, read, update and delete. Backend made with node.js + express  express and mysql database, frontend made with react.',
-                pt: 'Create, read, update and delete. Backend feito com node.js + express e banco de dados mysql, frontend feito com react.'
+                en: 'Create, read, update and delete. Backend made with typescript, node.js + express  express and mysql database, frontend made with react, typescript, sass.',
+                pt: 'Create, read, update and delete. Backend feito com typescript, node.js + express e banco de dados mysql, frontend feito com react, typescript, sass.'
             },
-            github: 'https://github.com/brunotrindadefm/CadastroDeUsuarios'
+            github: 'https://github.com/brunotrindadefm/CadastroUsuarios'
         },
         {
             name: 'Gerenciador de Custos',
