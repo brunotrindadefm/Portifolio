@@ -1,6 +1,5 @@
-import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaSass, FaNodeJs } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io";
-import { SiMysql, SiTypescript } from "react-icons/si";
+import { FaCss3Alt, FaReact, FaSass, FaNodeJs, FaAngular } from "react-icons/fa";
+import { SiMysql, SiTypescript, SiDotnet } from "react-icons/si";
 
 import { useEffect, useState } from "react";
 
@@ -13,6 +12,16 @@ const Project = ({ lang }) => {
     const [arrowUp, setArrowUp] = useState(false)
 
     const projects = [
+        {
+            name: 'Cadastro de Alunos',
+            image: '/cadastroAlunos.png',
+            technologies: [<FaAngular key="angular" />, <SiDotnet key='dotnet'/>, <SiMysql key='mysql'/>, <FaSass key='sass' />  ],
+            description: {
+                en: 'Student registration done in C#/.NET and Angular.',
+                pt: 'Cadastro de alunos feito em C#/.NET e Angular.'
+            },
+            github: 'https://github.com/brunotrindadefm/CadastroDeAlunos'
+        },
          {
             name: 'Estoque',
             image: '/estoque.png',
