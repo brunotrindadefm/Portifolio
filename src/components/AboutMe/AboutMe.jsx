@@ -1,10 +1,10 @@
 import './AboutMe.scss';
 
-import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaSass, FaJava, FaGitAlt, FaGithubAlt, FaNodeJs, FaNode } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaSass, FaJava, FaGitAlt, FaGithubAlt, FaNodeJs, FaAngular } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiMysql, SiTypescript } from "react-icons/si";
 import { TbSql } from "react-icons/tb";
-
+import { TbBrandCSharp } from "react-icons/tb";
 import { useState, useEffect } from 'react';
 
 const AboutMe = ({ lang }) => {
@@ -18,25 +18,23 @@ const AboutMe = ({ lang }) => {
     const [subtitle, setSubtitle] = useState('')
     const [skills, setSkills] = useState('')
 
-    console.log(lang)
-
     useEffect(() => {
         if (!lang) {
             setSubtitle("I'm Bruno")
             setTitle('Who is Bruno?')
-            setText1('In the second semester of the Computer Science program, I am seeking my first internship. With a natural curiosity for technology and a passion for solving problems, I am eager to apply my theoretical skills in a professional environment, learn from experts, and contribute to innovative projects.')
-            setText2('Preparing to enter the job market with my first internship, I have dedicated myself to studying programming and software development. I am looking to complement my academic training with practical experiences and am excited to face new challenges while helping the team achieve its goals.')
-            setText3("Ready to take the next step in my professional journey, I am looking for an internship that allows me to utilize my programming and development skills while learning from hands-on experience and contributing to the team's success. I am eager to face challenges and grow in the field of technology.")
-            setText4('I am seeking my first internship to apply the knowledge acquired in my classes and explore the world of technology in a practical way. With a proactive approach and a great desire to learn, I am prepared to dedicate myself to challenging projects and grow as a professional in the computing field.')
+            setText1("Currently in the third semester of the Computer Science program, I have already gained professional experience as a software development intern. With a natural curiosity for technology and a passion for problem-solving, I am constantly seeking to learn and grow in the field.")
+            setText2("During my internship, I worked with C# .NET, Angular, Azure, and SQL Server, gaining practical experience in both backend and frontend development. This opportunity allowed me to apply academic concepts to real-world projects and collaborate in an agile development environment.")
+            setText3("With this experience, I am now ready for new challenges and opportunities in the tech industry. I aim to refine my software development skills and contribute to innovative projects while continuously evolving as a professional.")
+            setText4("I am looking for new opportunities to further develop my skills and knowledge in web development and software engineering. My goal is to keep learning, face exciting challenges, and contribute to impactful projects.")
             setSkills('Skills')
         } else {
             setSubtitle("Eu sou Bruno")
             setTitle('Quem é Bruno?')
-            setText1('No segundo semestre do curso de Ciência da Computação, busco meu primeiro estágio. Com uma curiosidade natural por tecnologia e uma paixão por resolver problemas, tenho vontade de aplicar minhas habilidades teóricas em um ambiente profissional, aprender com especialistas e contribuir para projetos inovadores.')
-            setText2('Com a preparação para entrar no mercado de trabalho com o primeiro estágio, tenho me dedicado ao estudo de programação e desenvolvimento de software. O objetivo é complementar a formação acadêmica com experiências práticas. Estou empolgado para enfrentar novos desafios e ajudar a equipe a alcançar seus objetivos.')
-            setText3('Pronto para dar o próximo passo na jornada profissional, procuro um estágio que permita utilizar minhas habilidades em programação e desenvolvimento, ao mesmo tempo em que aprendo com a experiência prática e contribuo para o sucesso da equipe. A expectativa é enfrentar desafios e crescer na área de tecnologia.')
-            setText4('Busco meu primeiro estágio para aplicar os conhecimentos adquiridos nas aulas e explorar a tecnologia de maneira prática. Com uma abordagem proativa e um grande desejo de aprender, estou preparado para me dedicar a projetos desafiadores e crescer como profissional na área de computação.')
-            setSkills('Habilidades')
+            setText1('Atualmente no terceiro semestre do curso de Ciência da Computação, já tive a oportunidade de atuar como estagiário na área de desenvolvimento de software. Minha curiosidade por tecnologia e paixão por resolver problemas continuam a me impulsionar na busca por aprendizado e crescimento profissional.')
+            setText2('Durante minha experiência de estágio, trabalhei com C# .NET, Angular, Azure e SQL Server, adquirindo conhecimentos práticos tanto em backend quanto frontend. Essa vivência me permitiu aplicar conceitos acadêmicos em projetos reais e colaborar em equipe utilizando metodologias ágeis.')
+            setText3('Com essa bagagem, estou pronto para novos desafios e oportunidades na área de tecnologia. Busco aprimorar minhas habilidades em desenvolvimento de software e contribuir para projetos inovadores, sempre aprendendo e evoluindo profissionalmente.')
+            setText4('Estou em busca de uma nova oportunidade para continuar meu crescimento na área de tecnologia, utilizando as habilidades adquiridas e expandindo meu conhecimento em desenvolvimento web e engenharia de software.')
+            setSkills('Habilidades')            
         }
     }, [lang])
 
@@ -66,6 +64,8 @@ const AboutMe = ({ lang }) => {
                     <div><SiTypescript /></div>
                     <div><TbSql /></div>
                     <div><SiMysql /></div>
+                    <div><TbBrandCSharp /></div>
+                    <div><FaAngular /></div>
                 </div>
             </div>
         </div>
