@@ -138,17 +138,6 @@ const Project = ({ lang }) => {
             },
             deploy: 'https://bttictactoe.netlify.app/',
             github: 'https://github.com/brunotrindadefm/TicTacToe'
-        },
-        {
-            name: 'Calculadora',
-            image: '/calculadora.png',
-            technologies: [<FaReact key="react" />, <FaSass key="sass" />],
-            description: {
-                en: 'A basic calculator project.',
-                pt: 'Um projeto de calculadora básica.'
-            },
-            deploy: 'https://btcalculator.netlify.app/',
-            github: 'https://github.com/brunotrindadefm/calculadora'
         }
     ];
 

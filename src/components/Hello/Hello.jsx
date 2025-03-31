@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 
 import { FaHandPeace } from "react-icons/fa";
 
-import profileBruno from '/public/ProfileBruno.pdf'
+import cvBrunoTrindade from '/public/CV_BrunoTrindade.pdf'
 
 const Hello = ({ lang }) => {
 
@@ -37,8 +37,8 @@ const Hello = ({ lang }) => {
             <h1 data-aos="fade-up" data-aos-duration="1500">{name}</h1>
             <p data-aos="fade-down" data-aos-duration="2000">{about}</p>
             <a
-                href={profileBruno}
-                download={profileBruno}
+                href={cvBrunoTrindade}
+                download={cvBrunoTrindade}
                 data-aos="fade-left"
                 data-aos-duration="1800"
             >
