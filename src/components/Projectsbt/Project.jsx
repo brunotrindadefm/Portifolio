@@ -1,5 +1,6 @@
 import { FaCss3Alt, FaReact, FaSass, FaNodeJs, FaAngular } from "react-icons/fa";
-import { SiMysql, SiTypescript, SiDotnet } from "react-icons/si";
+import { SiMysql, SiTypescript, SiDotnet, SiJsonwebtokens } from "react-icons/si";
+import { BiLogoSpringBoot } from "react-icons/bi";
 
 import { useEffect, useState } from "react";
 
@@ -12,6 +13,16 @@ const Project = ({ lang }) => {
     const [arrowUp, setArrowUp] = useState(false)
 
     const projects = [
+        {
+            name: 'Auth Login',
+            image: '/LoginAuthProject.PNG',
+            technologies: [<FaReact key="react" />, <BiLogoSpringBoot key='spring-boot'/>, <SiMysql key='mysql'/>, <SiJsonwebtokens key='jwt' />, <FaSass key='sass' />  ],
+            description: {
+                en: 'Auth System (React + Spring Boot) Frontend: React + TypeScript | Backend: Spring Boot + JWT Features: Login/Register, protected routes, tokens JWT, UI responsive.',
+                pt: 'Auth System (React + Spring Boot) Frontend: React + TypeScript | Backend: Spring Boot + JWT Features: Login/registro, rotas protegidas, tokens JWT, UI responsiva.'
+            },
+            github: 'https://github.com/brunotrindadefm/LoginAuth'
+        },
         {
             name: 'Cadastro de Alunos',
             image: '/cadastroAlunos.png',
