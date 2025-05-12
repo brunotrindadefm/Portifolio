@@ -1,5 +1,6 @@
 import { FaCss3Alt, FaReact, FaSass, FaNodeJs, FaAngular } from "react-icons/fa";
-import { SiMysql, SiTypescript, SiDotnet } from "react-icons/si";
+import { SiMysql, SiTypescript, SiDotnet, SiExpo } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
 
 import { useEffect, useState } from "react";
 
@@ -15,17 +16,17 @@ const Project = ({ lang }) => {
         {
             name: 'Cadastro de Alunos',
             image: '/cadastroAlunos.png',
-            technologies: [<FaAngular key="angular" />, <SiDotnet key='dotnet'/>, <SiMysql key='mysql'/>, <FaSass key='sass' />  ],
+            technologies: [<FaAngular key="angular" />, <SiDotnet key='dotnet' />, <SiMysql key='mysql' />, <FaSass key='sass' />],
             description: {
                 en: 'Student registration done in C#/.NET and Angular.',
                 pt: 'Cadastro de alunos feito em C#/.NET e Angular.'
             },
             github: 'https://github.com/brunotrindadefm/CadastroDeAlunos'
         },
-         {
+        {
             name: 'Estoque',
             image: '/estoque.png',
-            technologies: [<FaReact key="react" />, <SiTypescript key='typescript'/> , <FaNodeJs key='node.js'/>, <SiMysql key='mysql'/>, <FaSass key='sass' />  ],
+            technologies: [<FaReact key="react" />, <SiTypescript key='typescript' />, <FaNodeJs key='node.js' />, <SiMysql key='mysql' />, <FaSass key='sass' />],
             description: {
                 en: 'Product inventory design, crud. Saving name, description, price, quantity in stock and image. Made with Typescript, React, Node.js + Express and relational database (MySQL).',
                 pt: 'Projeto de estoque de produtos, crud. Salvando nome, descrição, preço, quantidade em estoque e imagem. Feito com Typescript, React, Node.js + Express e banco de dados relacionais (MySQL).'
@@ -33,9 +34,19 @@ const Project = ({ lang }) => {
             github: 'https://github.com/brunotrindadefm/Estoque'
         },
         {
+            name: 'AppPokedex',
+            image: '/AppPokedex.png',
+            technologies: [<TbBrandReactNative key="reactNative" />, <SiTypescript key='typescript' />, <SiExpo />],
+            description: {
+                en: 'Pokédex app developed with React Native + Expo, integrating the PokéAPI.',
+                pt: ' App de Pokédex desenvolvido com React Native + Expo, integrando a PokéAPI.'
+            },
+            github: 'https://github.com/brunotrindadefm/AppPokedex'
+        },
+        {
             name: 'Cadastro de Usuários',
             image: '/cadastrodeusuarios.png',
-            technologies: [<FaReact key="react" />,<SiTypescript key='typescript'/>,  <FaNodeJs key='node.js'/>, <SiMysql key='mysql'/>, <FaSass key='sass' />  ],
+            technologies: [<FaReact key="react" />, <SiTypescript key='typescript' />, <FaNodeJs key='node.js' />, <SiMysql key='mysql' />, <FaSass key='sass' />],
             description: {
                 en: 'Create, read, update and delete. Backend made with typescript, node.js + express  express and mysql database, frontend made with react, typescript, sass.',
                 pt: 'Create, read, update and delete. Backend feito com typescript, node.js + express e banco de dados mysql, frontend feito com react, typescript, sass.'
@@ -45,7 +56,7 @@ const Project = ({ lang }) => {
         {
             name: 'Gerenciador de Custos',
             image: '/crud-mysql.png',
-            technologies: [<FaReact key="react" />,  <FaNodeJs key='node.js'/>, <SiMysql key='mysql'/>, <FaSass key='sass' />  ],
+            technologies: [<FaReact key="react" />, <FaNodeJs key='node.js' />, <SiMysql key='mysql' />, <FaSass key='sass' />],
             description: {
                 en: 'Crud project made with react, node + express and mysql database',
                 pt: 'Projeto crud feito com react, node + express e banco de dados mysql'
@@ -55,7 +66,7 @@ const Project = ({ lang }) => {
         {
             name: 'Register/Login',
             image: '/register-login.png',
-            technologies: [<FaReact key="react" />, <FaSass key='sass' />,  <FaNodeJs key='node.js'/>, <SiMysql key='mysql'/>  ],
+            technologies: [<FaReact key="react" />, <FaSass key='sass' />, <FaNodeJs key='node.js' />, <SiMysql key='mysql' />],
             description: {
                 en: 'A full-stack application designed for user authentication and registration management.',
                 pt: 'Uma aplicação full-stack projetada para gerenciar autenticação e registro de usuários.'
