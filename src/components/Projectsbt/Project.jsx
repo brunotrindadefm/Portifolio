@@ -1,7 +1,6 @@
 import { FaCss3Alt, FaReact, FaSass, FaNodeJs, FaAngular } from "react-icons/fa";
-import { SiMysql, SiTypescript, SiDotnet, SiExpo } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
-import { SiMysql, SiTypescript, SiDotnet, SiJsonwebtokens } from "react-icons/si";
+import { SiMysql, SiTypescript, SiDotnet, SiJsonwebtokens, SiExpo } from "react-icons/si";
 import { BiLogoSpringBoot } from "react-icons/bi";
 
 import { useEffect, useState } from "react";
